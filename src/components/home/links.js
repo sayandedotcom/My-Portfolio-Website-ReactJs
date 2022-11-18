@@ -1,12 +1,12 @@
-import GitHub from "../../assests/icons8-github-48.png";
-import Facebook from "../../assests/icons8-facebook-48.png";
-import Instagram from "../../assests/icons8-instagram-48.png";
-import Twitter from "../../assests/icons8-twitter-48.png";
-import Mail from "../../assests/icons8-email-48.png";
-import Linkedin from "../../assests/icons8-linkedin-48.png";
-import Resume from "../../assests/icons8-resume-48.png";
+import GitHub from "../../assests/svg-github.svg";
+import Facebook from "../../assests/svg-facebook.svg";
+import Instagram from "../../assests/svg-instagram.svg";
+import Twitter from "../../assests/svg-twitter.svg";
+import Mail from "../../assests/svg-gmail.svg";
+import Linkedin from "../../assests/svg-linkedin.svg";
+import Resume from "../../assests/svg-resume.svg";
 import ResumePDF from "../../assests/SayanDeCV.pdf";
-import WhatsApp from "../../assests/icons8-whatsapp-48.png";
+import WhatsApp from "../../assests/svg-whatsapp.svg";
 
 const links = [
   {
