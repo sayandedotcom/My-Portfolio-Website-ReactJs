@@ -14,11 +14,12 @@ export default function Skills() {
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="skills-heading">
           <FaLaptopCode />
-          <span>SKILLS</span>
-
+          Skills & Abilities
+        </div>
+        <div className="skills-quote">
           <h3>
             It is possible to fly without motors, but not without knowledge and
-            skill- Wilbur Wright
+            skill
           </h3>
         </div>
       </Grid>

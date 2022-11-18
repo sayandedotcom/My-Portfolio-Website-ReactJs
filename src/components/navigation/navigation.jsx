@@ -12,6 +12,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaGithub,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 function Navigation() {
@@ -57,7 +58,6 @@ function Navigation() {
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
             <Box>
               <h1 className="footer-heading">Sayan's Portfolio</h1>
-
               <h3>
                 Thank you for visiting my personal portfolio website. Connect
                 with me over socials.
@@ -71,29 +71,30 @@ function Navigation() {
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
             <Box>
               <h1 className="footer-heading">Quick Links</h1>
+
               <a className="quick-links" href="/">
-                <FaChevronCircleRight sx={{ fontSize: "1.2rem" }} />
-                Home
+                <FaChevronCircleRight />
+                &nbsp;Home
               </a>
               <a className="quick-links" href="/about">
-                <FaChevronCircleRight sx={{ fontSize: "1.2rem" }} />
-                About
+                <FaChevronCircleRight />
+                &nbsp;About
               </a>
               <a className="quick-links" href="/skills">
-                <FaChevronCircleRight sx={{ fontSize: "1.2rem" }} />
-                Skills
+                <FaChevronCircleRight />
+                &nbsp;Skills
               </a>
               <a className="quick-links" href="/education">
-                <FaChevronCircleRight sx={{ fontSize: "1.2rem" }} />
-                Education
+                <FaChevronCircleRight />
+                &nbsp;Education
               </a>
               <a className="quick-links" href="/projects">
-                <FaChevronCircleRight sx={{ fontSize: "1.2rem" }} />
-                Projects
+                <FaChevronCircleRight />
+                &nbsp;Projects
               </a>
               <a className="quick-links" href="/contactme">
-                <FaChevronCircleRight sx={{ fontSize: "1.2rem" }} />
-                Contact Me
+                <FaChevronCircleRight />
+                &nbsp;Contact Me
               </a>
             </Box>
           </Grid>
@@ -102,10 +103,11 @@ function Navigation() {
               {" "}
               <h1 className="footer-heading">Contact Info</h1>
               <h3>
-                <FaEnvelope /> sayandeten@gmail.com
+                <FaEnvelope />
+                &nbsp; sayandeten@gmail.com
               </h3>
               <h3>
-                <FaMapMarkedAlt /> Kolkata, India-700 061
+                <FaMapMarkedAlt /> &nbsp;Kolkata, India-700 061
               </h3>
               <a href="https://www.facebook.com/profile.php?id=100010494277272">
                 <FaFacebook className="fonts" />
@@ -125,6 +127,9 @@ function Navigation() {
               <a href="mailto:sayandeten@gmail.com">
                 <FaEnvelope className="fonts" />
               </a>
+              <a href="https://wa.me/+917439891451">
+                <FaWhatsapp className="fonts" />
+              </a>
             </Box>
           </Grid>
           <Grid
@@ -140,7 +145,7 @@ function Navigation() {
               <FavoriteIcon sx={{ color: "#eb3341", fontSize: "0.9rem" }} /> By
               Sayan De
             </h4>
-            <hr></hr>
+            <hr />
           </Grid>
         </Grid>
       </footer>

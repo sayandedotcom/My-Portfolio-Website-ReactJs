@@ -6,6 +6,7 @@ import Mail from "../../assests/icons8-email-48.png";
 import Linkedin from "../../assests/icons8-linkedin-48.png";
 import Resume from "../../assests/icons8-resume-48.png";
 import ResumePDF from "../../assests/SayanDeCV.pdf";
+import WhatsApp from "../../assests/icons8-whatsapp-48.png";
 
 const links = [
   {
@@ -49,6 +50,12 @@ const links = [
     name: "Resume",
     link: ResumePDF,
     src: Resume,
+  },
+  {
+    id: 8,
+    name: "WhatsApp",
+    link: "https://wa.me/+917439891451",
+    src: WhatsApp,
   },
 ];
 export default links;

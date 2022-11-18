@@ -6,7 +6,8 @@
 }
 .nav-links-container {
   font-size: 1.8rem;
-  justify-content: flex-end;
+  display: flex;
+  justify-content: space-between;
 }
 .nav-link {
   font-family: "Itim", cursive;
@@ -17,19 +18,25 @@
 .active {
   background-color: rgb(125, 253, 253);
 }
+
 .quick-links {
   color: azure;
   text-decoration: none;
-  display: block;
+  padding: 5px;
+  display: flex;
+}
+.quick-links:hover {
+  color: #3f1be5;
 }
 .fonts {
   font-size: 2rem;
   text-decoration: none;
   color: azure;
   margin-right: 0.5rem;
+  margin-top: 1rem;
 }
 .fonts:hover {
-  color: royalblue;
+  color: #3f1be5;
 }
 .footer-heading {
   padding-bottom: 1.5rem;
