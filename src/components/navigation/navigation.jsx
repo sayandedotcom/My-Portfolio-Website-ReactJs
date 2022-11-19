@@ -58,6 +58,8 @@ function Navigation() {
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
             <Box>
               <h1 className="footer-heading">Sayan's Portfolio</h1>
+              <hr style={{ borderTop: "1px solid white" }} />
+              <br />
               <h3>
                 Thank you for visiting my personal portfolio website. Connect
                 with me over socials.
@@ -71,7 +73,8 @@ function Navigation() {
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
             <Box>
               <h1 className="footer-heading">Quick Links</h1>
-
+              <hr style={{ borderTop: "1px solid white" }} />
+              <br />
               <a className="quick-links" href="/">
                 <FaChevronCircleRight />
                 &nbsp;Home
@@ -102,6 +105,8 @@ function Navigation() {
             <Box>
               {" "}
               <h1 className="footer-heading">Contact Info</h1>
+              <hr style={{ borderTop: "1px solid white" }} />
+              <br />
               <h3>
                 <FaEnvelope />
                 &nbsp; sayandeten@gmail.com
@@ -141,7 +146,7 @@ function Navigation() {
             sx={{ textAlign: "center" }}
           >
             <h4>
-              Designed With{" "}
+              Designed With
               <FavoriteIcon sx={{ color: "#eb3341", fontSize: "0.9rem" }} /> By
               Sayan De
             </h4>

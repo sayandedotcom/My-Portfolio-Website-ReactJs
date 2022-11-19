@@ -1,12 +1,12 @@
-import HTML from "../../assests/icons8-html-5-48.png";
-import CSS from "../../assests/icons8-css3-48.png";
-import SASS from "../../assests/icons8-sass-48.png";
-import JavaScript from "../../assests/icons8-javascript-48.png";
-import TypeScript from "../../assests/icons8-typescript-48.png";
-import NPM from "../../assests/icons8-npm-48.png";
-import Yarn from "../../assests/icons8-yarn-logo-48.png";
-import Webpack from "../../assests/icons8-webpack-48.png";
-import Babel from "../../assests/icons8-babel-48.png";
+import HTML from "../../assests/svg-html-5.svg";
+import CSS from "../../assests/svg-css-3.svg";
+import SASS from "../../assests/svg-sass.svg";
+import JavaScript from "../../assests/svg-javascript.svg";
+import TypeScript from "../../assests/svg-typescript.svg";
+import NPM from "../../assests/svg-npm.svg";
+import Yarn from "../../assests/svg-yarn.svg";
+import Webpack from "../../assests/svg-webpack.svg";
+import Babel from "../../assests/svg-babel.svg";
 
 const FrontEnd1 = [
   {
@@ -19,45 +19,45 @@ const FrontEnd1 = [
     id: 2,
     name: "CSS",
     src: CSS,
-    value: 80,
+    value: 70,
   },
   {
     id: 3,
     name: "SASS",
     src: SASS,
-    value: 80,
+    value: 70,
   },
   {
     id: 4,
     name: "JavaScript",
     src: JavaScript,
-    value: 80,
+    value: 60,
   },
   {
     id: 5,
     name: "TypeScript",
     src: TypeScript,
-    value: 80,
+    value: 60,
   },
   {
     id: 6,
     name: "NPM",
     src: NPM,
-    value: 80,
+    value: 70,
   },
 
   {
     id: 7,
     name: "Yarn",
     src: Yarn,
-    value: 80,
+    value: 70,
   },
 
   {
     id: 8,
     name: "Webpack",
     src: Webpack,
-    value: 80,
+    value: 60,
   },
   {
     id: 9,

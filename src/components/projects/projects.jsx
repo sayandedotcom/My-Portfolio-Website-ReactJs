@@ -52,7 +52,7 @@ export default function Projects() {
       </Grid>
 
       <Box sx={{ width: "100%", minHeight: 829 }}>
-        <Masonry>
+        <Masonry columns={2}>
           {itemData.map(({ img, src }, index) => (
             <div key={index}>
               {/* <Label>{index + 1}</Label> */}

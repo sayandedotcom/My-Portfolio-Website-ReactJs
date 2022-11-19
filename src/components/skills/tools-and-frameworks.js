@@ -1,8 +1,8 @@
-import Git from "../../assests/icons8-git-48.png";
-import GitHub from "../../assests/icons8-github-48.png";
-import Jira from "../../assests/icons8-jira-48.png";
-import Bootstrap from "../../assests/icons8-bootstrap-48.png";
-import Firebase from "../../assests/icons8-firebase-48.png";
+import Git from "../../assests/svg-git.svg";
+import GitHub from "../../assests/svg-github.svg";
+import Jira from "../../assests/svg-jira.svg";
+import Bootstrap from "../../assests/svg-bootstrap.svg";
+import Firebase from "../../assests/svg-firebase.svg";
 import ExpressJS from "../../assests/icons8-express-js-48.png";
 import NodeJs from "../../assests/icons8-nodejs-48.png";
 import MongoDB from "../../assests/icons8-mongodb-48.png";
@@ -10,8 +10,8 @@ import Postman from "../../assests/icons8-postman-48.png";
 import Heroku from "../../assests/icons8-heroku-48.png";
 import Netlify from "../../assests/icons8-netlify-48.png";
 import Linux from "../../assests/icons8-linux-48.png";
-import Docker from "../../assests/icons8-docker-48.png";
-import UnrealEngine from "../../assests/icons8-unreal-engine-48.png";
+import Docker from "../../assests/svg-docker.svg";
+import UnrealEngine from "../../assests/svg-unreal-engine.svg";
 import AWS from "../../assests/icons8-amazon-web-services-48.png";
 
 const Tools = [

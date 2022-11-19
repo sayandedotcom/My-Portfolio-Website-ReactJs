@@ -1,4 +1,4 @@
-import Java from "../../assests/icons8-java-48.png";
+import Java from "../../assests/svg-java.svg";
 import HTML from "../../assests/icons8-html-5-48.png";
 import CSS from "../../assests/icons8-css3-48.png";
 import SASS from "../../assests/icons8-sass-48.png";
@@ -7,7 +7,7 @@ import TypeScript from "../../assests/icons8-typescript-48.png";
 import Python from "../../assests/icons8-python-48.png";
 import SQL from "../../assests/icons8-sql-48.png";
 import PHP from "../../assests/icons8-php-logo-48.png";
-import GraphQL from "../../assests/icons8-graphql-48.png";
+import GraphQL from "../../assests/svg-graphql.svg";
 import Go from "../../assests/icons8-golang-48.png";
 
 const languages = [
