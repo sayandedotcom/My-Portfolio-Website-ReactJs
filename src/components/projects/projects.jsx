@@ -2,10 +2,10 @@ import { Grid } from "@mui/material";
 import React from "react";
 import "./projectss.css";
 import { FaLaptopCode } from "react-icons/fa";
-import Cal from "../../assests/calculator.png";
-import Port from "../../assests/port.png";
-import Free from "../../assests/1.png";
-
+import Calulator from "../../assests/calculator.png";
+import ToDo from "../../assests/todo.png";
+import FreeCV from "../../assests/1.png";
+import { Label } from "@mui/icons-material";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
@@ -22,15 +22,15 @@ import { styled } from "@mui/material/styles";
 // }));
 const itemData = [
   {
-    img: Free,
+    img: FreeCV,
     title: "FreeCV",
   },
   {
-    img: Cal,
+    img: Calulator,
     title: "Calculator",
   },
   {
-    img: Port,
+    img: ToDo,
     title: "Port",
   },
 ];
@@ -53,9 +53,9 @@ export default function Projects() {
 
       <Box sx={{ width: "100%", minHeight: 829 }}>
         <Masonry columns={2}>
-          {itemData.map(({ img, src }, index) => (
+          {itemData.map(({ img, title }, index) => (
             <div key={index}>
-              {/* <Label>{index + 1}</Label> */}
+              <Label>{title}</Label>
               <img
                 src={img}
                 // srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}

@@ -1,13 +1,30 @@
+.skills {
+  background-color: #5604a4;
+  color: white;
+}
+.skill-icon {
+  margin-top: 2px;
+  font-size: 2.5rem;
+}
+.skill-icon:hover {
+  color: #ffe600;
+}
 .skills-heading {
   text-align: center;
   display: flex;
   justify-content: center;
-  font-weight: 900;
-  font-size: 3rem;
+  font-size: 2.3rem;
+  font-weight: 600;
 }
 .skills-quote {
+  margin-top: 1rem;
   text-align: center;
   font-weight: 600;
+}
+.other-skills-heading {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 900;
 }
 .skills-title {
   text-align: center;
@@ -16,11 +33,15 @@
   display: flex;
 }
 .skills-bar {
+  margin-left: 1rem;
   width: 100%;
 }
 .skills-name {
   display: flex;
+  color: white;
+  font-size: 1.2rem;
 }
-/* .skills-icons {
-  display: inline-block;
-} */
+.other-heading {
+  font-size: 1.5rem;
+  margin-bottom: 11px;
+}

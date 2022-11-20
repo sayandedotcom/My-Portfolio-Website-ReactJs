@@ -1,16 +1,48 @@
+.education-icon {
+  font-size: 3rem;
+}
+.education-icon:hover {
+  color: #7303a7;
+}
 .education-heading {
   text-align: center;
   display: flex;
   justify-content: center;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .education-quote {
   text-align: center;
   font-weight: 600;
 }
-.line-connector {
+/* .line-connector {
   height: 190px;
-  width: 8px;
   background-color: #000;
+} */
+.education-content-box-right {
+  background-color: #0f46a2;
+  color: white;
+  border-radius: 25px;
+  font-weight: 700;
+  height: 150px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.education-content-text-right {
+  margin-left: 15px;
+  padding-top: 10px;
+}
+.education-content-box-left {
+  background-color: #0f46a2;
+  color: white;
+  border-radius: 25px;
+  font-weight: 700;
+  height: 150px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.education-content-text-left {
+  margin-left: 15px;
+  padding-top: 10px;
+  text-align: left;
 }
