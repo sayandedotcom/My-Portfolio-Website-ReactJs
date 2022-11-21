@@ -6,10 +6,10 @@ import Firebase from "../../assests/svg-firebase.svg";
 import ExpressJS from "../../assests/svg-express-js.svg";
 import NodeJs from "../../assests/svg-nodejs.svg";
 import MongoDB from "../../assests/svg-mongodb.svg";
-import Postman from "../../assests/icons8-postman-48.png";
+import Postman from "../../assests/svg-postman.svg";
 import Heroku from "../../assests/svg-heroku.svg";
-import Netlify from "../../assests/icons8-netlify-48.png";
-import Linux from "../../assests/icons8-linux-48.png";
+import Netlify from "../../assests/svg-netlify.svg";
+import Linux from "../../assests/svg-linux.svg";
 import Docker from "../../assests/svg-docker.svg";
 import UnrealEngine from "../../assests/svg-unreal-engine.svg";
 import AWS from "../../assests/svg-amazon-web-services.svg";
@@ -28,7 +28,7 @@ const Tools = [
   {
     name: "Jira",
     src: Jira,
-    value: 80,
+    value: 70,
   },
   {
     name: "Bootstrap",
@@ -43,17 +43,17 @@ const Tools = [
   {
     name: "ExpressJS",
     src: ExpressJS,
-    value: 80,
+    value: 50,
   },
   {
     name: "NodeJs",
     src: NodeJs,
-    value: 80,
+    value: 50,
   },
   {
     name: "MongoDB",
     src: MongoDB,
-    value: 80,
+    value: 60,
   },
   {
     name: "Postman",
@@ -79,17 +79,17 @@ const Tools = [
   {
     name: "Docker",
     src: Docker,
-    value: 80,
+    value: 60,
   },
   {
     name: "AWS",
     src: AWS,
-    value: 80,
+    value: 20,
   },
   {
     name: "Unreal Engine",
     src: UnrealEngine,
-    value: 80,
+    value: 40,
   },
 ];
 export default Tools;

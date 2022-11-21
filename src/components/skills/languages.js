@@ -19,12 +19,12 @@ const languages = [
   {
     name: "PHP",
     src: PHP,
-    value: 80,
+    value: 60,
   },
   {
     name: "Python",
     src: Python,
-    value: 80,
+    value: 30,
   },
   {
     name: "GraphQL",
@@ -34,7 +34,7 @@ const languages = [
   {
     name: "Go",
     src: Go,
-    value: 80,
+    value: 30,
   },
 ];
 export default languages;

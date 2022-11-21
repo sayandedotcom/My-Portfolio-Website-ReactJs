@@ -7,15 +7,15 @@ import NPM from "../../assests/svg-npm.svg";
 import Yarn from "../../assests/svg-yarn.svg";
 import Webpack from "../../assests/svg-webpack.svg";
 import Babel from "../../assests/svg-babel.svg";
-
+import Gatsby from "../../assests/svg-gatsbyjs.svg";
 const FrontEnd1 = [
   {
-    name: "HTML",
+    name: "HTML 5",
     src: HTML,
     value: 80,
   },
   {
-    name: "CSS",
+    name: "CSS 3",
     src: CSS,
     value: 70,
   },
@@ -54,6 +54,11 @@ const FrontEnd1 = [
   {
     name: "Babel",
     src: Babel,
+    value: 80,
+  },
+  {
+    name: "Gatsby Js",
+    src: Gatsby,
     value: 80,
   },
 ];

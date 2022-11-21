@@ -1,11 +1,16 @@
 import React from "../../assests/svg-react.svg";
-import ReactRouter from "../../assests/react-router-48.png";
+import ReactRouter from "../../assests/svg-react-router.svg";
 import Redux from "../../assests/svg-redux.svg";
-import ReduxSaga from "../../assests/redux-saga-48.png";
+import ReduxSaga from "../../assests/svg-redux-saga.svg";
 import MaterialUI from "../../assests/svg-material-ui.svg";
-import StyledComponents from "../../assests/icons8-style-component-48.png";
-// import StyledComponents from "../../assests/style-component-50.jpg";
+import StyledComponents from "../../assests/svg-styled-components.svg";
+import ReactQuery from "../../assests/svg-react-query.svg";
 import NextJs from "../../assests/svg-next.svg";
+import Jest from "../../assests/svg-jest.svg";
+import Flux from "../../assests/svg-flux.svg";
+import ReactNative from "../../assests/svg-react.svg";
+import PWA from "../../assests/svg-pwa.svg";
+
 const FrontEnd2 = [
   {
     name: "React",
@@ -41,6 +46,31 @@ const FrontEnd2 = [
     name: "Styled Components",
     src: StyledComponents,
     value: 80,
+  },
+  {
+    name: "React Query",
+    src: ReactQuery,
+    value: 80,
+  },
+  {
+    name: "Jest",
+    src: Jest,
+    value: 80,
+  },
+  {
+    name: "Flux",
+    src: Flux,
+    value: 80,
+  },
+  {
+    name: "React Native",
+    src: ReactNative,
+    value: 30,
+  },
+  {
+    name: "Progressive Web Apps",
+    src: PWA,
+    value: 30,
   },
 ];
 export default FrontEnd2;

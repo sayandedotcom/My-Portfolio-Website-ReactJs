@@ -101,11 +101,11 @@ function Navigation() {
             sx={{ textAlign: "center" }}
           >
             <h4>
-              Designed With&nbsp;
-              <FavoriteIcon sx={{ color: "#eb3341", fontSize: "0.9rem" }} />
+              Developed & Designed With&nbsp;
+              <FavoriteIcon sx={{ color: "#eb3341", fontSize: "1.2rem" }} />
               &nbsp;By Sayan De
             </h4>
-            <hr />
+            <hr style={{ borderBottom: "1px solid white" }} />
           </Grid>
         </Grid>
       </footer>
