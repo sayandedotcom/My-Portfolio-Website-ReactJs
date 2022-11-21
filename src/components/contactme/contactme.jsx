@@ -7,7 +7,7 @@ export default function Contactme() {
     <Grid container p={5}>
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="contactme-heading">
-          <FaPhoneAlt /> &nbsp;Contact Me
+          <FaPhoneAlt /> &nbsp;Contact Me (Incomplete)
         </div>
         <div className="contactme-quote">
           <h3>

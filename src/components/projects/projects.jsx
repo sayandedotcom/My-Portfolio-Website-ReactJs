@@ -41,7 +41,7 @@ export default function Projects() {
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="projects-heading">
           <FaLaptopCode />
-          My Projects
+          My Projects(Incomplete)
         </div>
         <div className="projects-quote">
           <h3>
