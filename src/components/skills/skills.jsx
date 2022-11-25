@@ -25,7 +25,7 @@ export default function Skills() {
 
       <Grid item lg={12} md={12} sm={12} xs={12} p={2}>
         <p className="other-skills-heading">
-          Front-End Technologies I have worked with
+          Front-End Technologies & libraries I have worked with
         </p>
       </Grid>
 
@@ -58,9 +58,7 @@ export default function Skills() {
       </Grid>
 
       <Grid item lg={12} md={12} sm={12} xs={12} p={2}>
-        <p className="other-skills-heading">
-          Others Technologies I have worked with
-        </p>
+        <p className="other-skills-heading">Others</p>
       </Grid>
 
       <Grid item lg={4} md={4} sm={12} xs={12} p={3} className="skills-title">
