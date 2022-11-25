@@ -43,14 +43,14 @@ function Navigation() {
               <h1 className="footer-heading">Sayan's Portfolio</h1>
               <hr style={{ borderTop: "1px solid white" }} />
               <br />
-              <h3>
+              <h4>
                 Thank you for visiting my personal portfolio website. Connect
                 with me over socials.
                 <h1> </h1>
                 <br />
                 Please wait for a while all major projects will be listed soon.
                 Till then keep visiting. Connect with me over live chat!
-              </h3>
+              </h4>
             </Box>
           </Grid>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
@@ -100,9 +100,9 @@ function Navigation() {
             xs={12}
             sx={{ textAlign: "center" }}
           >
-            <h4>
+            <h4 style={{ display: "flex", justifyContent: "center" }}>
               Developed & Designed With&nbsp;
-              <FavoriteIcon sx={{ color: "#eb3341", fontSize: "1.2rem" }} />
+              <FavoriteIcon sx={{ color: "#eb3341", fontSize: "1.1rem" }} />
               &nbsp;By Sayan De
             </h4>
             <hr style={{ borderBottom: "1px solid white" }} />

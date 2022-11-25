@@ -37,22 +37,20 @@ const itemData = [
 
 export default function Projects() {
   return (
-    <Grid container p={5}>
+    <Grid container className="projects" p={5}>
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="projects-heading">
-          <FaLaptopCode />
-          My Projects(Incomplete)
+          <FaLaptopCode className="projects-icon" />
+          &nbsp;My <span style={{ color: "#ffe600" }}>&nbsp;Projects</span>
         </div>
-        <div className="projects-quote">
-          <h3>
-            A PROJECT IS COMPLETE WHEN IT STARTS WORKING FOR YOU, RATHER THAN
-            YOU WORKING FOR IT.
-          </h3>
-        </div>
+        <h3 className="projects-quote">
+          A project is complete when it starts working for you, rather than you
+          working for it.
+        </h3>
       </Grid>
 
-      <Box sx={{ width: "100%", minHeight: 829 }}>
-        <Masonry columns={2}>
+      <Box sx={{ width: "100%", minHeight: 829, padding: "2rem 6rem" }}>
+        <Masonry columns={3}>
           {itemData.map(({ img, title }, index) => (
             <div key={index}>
               <Label>{title}</Label>

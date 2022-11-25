@@ -11,7 +11,7 @@ export default function Home() {
           Hi, I'm <span>Sayan De</span>
         </h1>
         <br />
-        <h2 className="home-paragraph">
+        <h3 className="home-paragraph">
           Welcome to my Website. I am a senior studying Computer Science at the
           Future Institute of Engineering and Management 👩‍💻. I'm passionate in
           Front-End Development, Open Source Projects, Software Development and
@@ -26,14 +26,20 @@ export default function Home() {
           skills and knowledge. Being a fast learner, I would like to learn and
           earn in order to meet the common objectives of the organization as a
           whole by utilizing a positive approach in everything that I do. */}
-        </h2>
+        </h3>
         <h1> </h1>
         <br />
         <h2 style={{ color: "#0984ad" }}>Connect With me here :)</h2>
-        {links.map(({ id, name, link, src }) => (
-          <a key={id} href={link} target="blank">
+
+        {links.map(({ name, link, src }, index) => (
+          <a key={index} href={link} target="blank">
             <Tooltip title={name} placement="bottom-start" arrow>
-              <img className="icons" src={src} alt={name} />
+              <img
+                className="icons"
+                src={src}
+                alt={name}
+                // onClick={() => (window.location.href = (link, "blank"))}
+              />
             </Tooltip>
           </a>
         ))}

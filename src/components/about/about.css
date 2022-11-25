@@ -1,0 +1,25 @@
+.about {
+  background-color: white;
+  color: black;
+}
+.about-icon {
+  margin-top: 2px;
+  /* font-size: 2.5rem;
+  font-weight: 900; */
+}
+.about-icon:hover {
+  color: #7303a7;
+}
+.about-heading {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.about-quote {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}

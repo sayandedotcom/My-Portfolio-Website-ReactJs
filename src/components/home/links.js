@@ -10,49 +10,41 @@ import WhatsApp from "../../assests/svg-whatsapp.svg";
 
 const links = [
   {
-    id: 1,
     name: "My Facebook",
     link: "https://www.facebook.com/profile.php?id=100010494277272",
     src: Facebook,
   },
   {
-    id: 2,
     name: "My Instagram",
     link: "https://www.instagram.com/sayande._/",
     src: Instagram,
   },
   {
-    id: 3,
     name: "My Twitter",
     link: "https://twitter.com/sayande2002",
     src: Twitter,
   },
   {
-    id: 4,
     name: "My GitHub",
     link: "https://github.com/sayande2002",
     src: GitHub,
   },
   {
-    id: 5,
     name: "My Linkedin",
     link: "https://www.linkedin.com/in/sayande/",
     src: Linkedin,
   },
   {
-    id: 6,
-    name: "Mail Me",
+    name: "My Mail",
     link: "mailto:sayandeten@gmail.com",
     src: Mail,
   },
   {
-    id: 7,
     name: "Resume / CV",
     link: ResumePDF,
     src: Resume,
   },
   {
-    id: 8,
     name: "My WhatsApp",
     link: "https://wa.me/+917439891451",
     src: WhatsApp,
