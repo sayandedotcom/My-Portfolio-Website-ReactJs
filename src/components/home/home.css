@@ -23,6 +23,7 @@
 .image {
   text-align: center;
 }
+
 .image img {
   margin: 3rem;
   border-radius: 5%;
@@ -30,6 +31,8 @@
   mix-blend-mode: luminosity;
   transition: 0.3s;
   cursor: pointer;
+  height: 400px;
+  width: 300px;
 }
 .image img:hover {
   mix-blend-mode: normal;
