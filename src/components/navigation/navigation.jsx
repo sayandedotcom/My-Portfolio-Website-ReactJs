@@ -23,7 +23,7 @@ function Navigation() {
       <AppBar position="static" color="default">
         <Toolbar>
           <Grid container>
-            <Grid item lg={6} md={6} sm={5} xs={7}>
+            <Grid item lg={6} md={6} sm={5} xs={9}>
               <Tooltip title="Go Home" placement="bottom-end" arrow>
                 <Link className="logo" to="/">
                   <h1>&lt;&nbsp;</h1>
@@ -37,7 +37,7 @@ function Navigation() {
               lg={6}
               md={6}
               sm={7}
-              xs={5}
+              xs={3}
               className="nav-links-container"
             >
               {isMatch ? (
@@ -65,7 +65,7 @@ function Navigation() {
         <Grid container p={6}>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
             <Box>
-              <h1 className="footer-heading">Sayan's Portfolio</h1>
+              <h1 className="footer-heading">My Portfolio</h1>
               <hr style={{ borderTop: "1px solid white" }} />
               <br />
               <h4>

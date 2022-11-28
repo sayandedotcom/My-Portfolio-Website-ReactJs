@@ -42,7 +42,7 @@ export default function About() {
           <span style={{ color: "#989799" }}>Redux-Saga</span>,{" "}
           <span style={{ color: "#ff4154" }}>React Query</span> ,{" "}
           <span style={{ color: "blue" }}>Formik</span> ,{" "}
-          <span style={{ color: "green" }}>FLux</span> , etc and I have also
+          <span style={{ color: "green" }}>Flux</span> , etc and I have also
           worked on styles with{" "}
           <span style={{ color: "#29b6f6" }}>Material UI</span> ,{" "}
           <span style={{ color: "#673ab7" }}>React Bootstrap</span> , etc and

@@ -3,7 +3,6 @@ import { Grid, Tooltip } from "@mui/material";
 import "./contactme.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import links from "../home/links";
-import { textAlign } from "@mui/system";
 export default function Contactme() {
   return (
     <Grid container className="contactme" p={5}>
