@@ -50,9 +50,7 @@ export default function About() {
           have also had experience with testing React Websites with{" "}
           <span style={{ color: "#99425b" }}>Jest</span> and{" "}
           <span style={{ color: "#99425b" }}>React Testing Library</span> .I
-          have containerized <span style={{ color: "#7fd7e8" }}>React</span>{" "}
-          Apps with <span style={{ color: "#2395ec" }}>Docker</span> for making
-          them production ready.I have also worked with other frameworks like{" "}
+          have also worked with other frameworks like{" "}
           <span style={{ color: "#212121" }}>Next Js</span> and also worked on{" "}
           <span style={{ color: "#7fd7e8" }}>React Native</span>
           for Mobile Applications Developmet. I have also familier with backend
@@ -62,8 +60,12 @@ export default function About() {
           and <span style={{ color: "7fd7e8" }}>Express Js</span> and{" "}
           <span style={{ color: "#4caf50" }}>Mongo DB</span> .
           <br />
-          <br />I am comfortable working on Linux Environment and also familier
-          with
+          <br />I have containerized{" "}
+          <span style={{ color: "#7fd7e8" }}>React</span> Apps with{" "}
+          <span style={{ color: "#2395ec" }}>Docker</span> and deployed on{" "}
+          <span style={{ color: "#d4732a" }}>AWS </span>
+          for making them production ready. I am comfortable working on Linux
+          Environment and also familier with
           <span style={{ color: "#f4511e" }}> Git Version Control System</span>,
           <span style={{ color: "7fd7e8" }}> GitHub</span>,{" "}
           <span style={{ color: "#2380fb" }}>Jira</span> etc.

@@ -22,3 +22,31 @@
   text-align: center;
   font-weight: 600;
 }
+.container {
+  display: flex;
+}
+.card {
+  /* height: 500px; */
+  /* width: 50px; */
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.img {
+  /* height: 500px; */
+  /* width: 350px; */
+  border-radius: 10px;
+}
+.intro {
+  height: 200px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 240px;
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+.card:hover {
+  cursor: pointer;
+}

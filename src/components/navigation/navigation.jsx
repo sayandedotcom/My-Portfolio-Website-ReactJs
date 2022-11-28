@@ -1,12 +1,23 @@
 import React from "react";
 import "./navigation.css";
-import { AppBar, Toolbar, Grid, Box, Tooltip } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Grid,
+  Box,
+  Tooltip,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { FaMapMarkedAlt, FaEnvelope } from "react-icons/fa";
 import navLinks from "./navLinks";
 import footerLinks from "./footerLinks";
+import Drawer from "./drawer";
 function Navigation() {
+  const theme = useTheme();
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <>
       <AppBar position="static" color="default">
@@ -22,13 +33,22 @@ function Navigation() {
               </Tooltip>
             </Grid>
             <Grid item xs={6} className="nav-links-container">
-              {navLinks.map(({ to, name }, index) => (
-                <Tooltip key={index} title={name} placement="bottom-end" arrow>
-                  <NavLink className="nav-link" to={to}>
-                    {name}
-                  </NavLink>
-                </Tooltip>
-              ))}
+              {isMatch ? (
+                <Drawer navLinks={navLinks} />
+              ) : (
+                navLinks.map(({ to, name }, index) => (
+                  <Tooltip
+                    key={index}
+                    title={name}
+                    placement="bottom-end"
+                    arrow
+                  >
+                    <NavLink className="nav-link" to={to}>
+                      {name}
+                    </NavLink>
+                  </Tooltip>
+                ))
+              )}
             </Grid>
           </Grid>
         </Toolbar>
@@ -46,7 +66,7 @@ function Navigation() {
               <h4>
                 Thank you for visiting my personal portfolio website. Connect
                 with me over socials.
-                <h1> </h1>
+                <br />
                 <br />
                 Please wait for a while all major projects will be listed soon.
                 Till then keep visiting. Connect with me over live chat!
@@ -61,7 +81,7 @@ function Navigation() {
               {footerLinks.map(
                 ({ id, name, href, fonts }) =>
                   id <= 6 && (
-                    <a className="quick-links" href={href}>
+                    <a key={id} className="quick-links" href={href}>
                       {fonts}
                       &nbsp;{name}
                     </a>
@@ -85,7 +105,7 @@ function Navigation() {
               {footerLinks.map(
                 ({ id, name, href, fonts }) =>
                   id > 6 && (
-                    <a href={href} target="blank">
+                    <a key={id} href={href} target="blank">
                       {fonts}
                     </a>
                   )

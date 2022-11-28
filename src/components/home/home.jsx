@@ -16,18 +16,18 @@ export default function Home() {
           Future Institute of Engineering and Management 👩‍💻. I'm passionate in
           Front-End Development, Open Source Projects, Software Development and
           community activities 🤩.
-          <h1> </h1>
+          <br />
           <br />I Am A Self-Taught Developer With A Passion For Web Development
           And Problem Solving. I Have A Strong Background in Software
           Development And Have Worked On A Wide Variety Of Projects.
-          <h1> </h1>
+          <br />
           {/* <br />
           Looking for a challenging role in a reputable organization to use my
           skills and knowledge. Being a fast learner, I would like to learn and
           earn in order to meet the common objectives of the organization as a
           whole by utilizing a positive approach in everything that I do. */}
         </h3>
-        <h1> </h1>
+
         <br />
         <h2 style={{ color: "#0984ad" }}>Connect With me here :)</h2>
 
@@ -45,7 +45,7 @@ export default function Home() {
         ))}
       </Grid>
       <Grid item lg={6} md={6} sm={12} xs={12}>
-        <div class="image">
+        <div className="image">
           <img src={Sayan} alt="SayanImage" />
         </div>
       </Grid>

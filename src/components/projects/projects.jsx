@@ -49,7 +49,7 @@ export default function Projects() {
         </h3>
       </Grid>
 
-      <Box sx={{ width: "100%", minHeight: 829, padding: "2rem 6rem" }}>
+      {/* <Box sx={{ width: "100%", minHeight: 829, padding: "2rem 6rem" }}>
         <Masonry columns={3}>
           {itemData.map(({ img, title }, index) => (
             <div key={index}>
@@ -68,7 +68,16 @@ export default function Projects() {
             </div>
           ))}
         </Masonry>
-      </Box>
+      </Box> */}
+      <div className="container">
+        <div className="card">
+          <img src={Calulator} alt="cal" />
+          <div className="intro">
+            <h1>Calculator</h1>
+            <p>My name is Sayan De</p>
+          </div>
+        </div>
+      </div>
     </Grid>
   );
 }
