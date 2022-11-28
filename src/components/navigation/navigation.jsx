@@ -23,7 +23,7 @@ function Navigation() {
       <AppBar position="static" color="default">
         <Toolbar>
           <Grid container>
-            <Grid item xs={6}>
+            <Grid item lg={6} md={6} sm={5} xs={7}>
               <Tooltip title="Go Home" placement="bottom-end" arrow>
                 <Link className="logo" to="/">
                   <h1>&lt;&nbsp;</h1>
@@ -32,7 +32,14 @@ function Navigation() {
                 </Link>
               </Tooltip>
             </Grid>
-            <Grid item xs={6} className="nav-links-container">
+            <Grid
+              item
+              lg={6}
+              md={6}
+              sm={7}
+              xs={5}
+              className="nav-links-container"
+            >
               {isMatch ? (
                 <Drawer navLinks={navLinks} />
               ) : (
@@ -53,9 +60,7 @@ function Navigation() {
           </Grid>
         </Toolbar>
       </AppBar>
-
       <Outlet />
-
       <footer style={{ backgroundColor: "#00012b", color: "white" }}>
         <Grid container p={6}>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
@@ -120,11 +125,11 @@ function Navigation() {
             xs={12}
             sx={{ textAlign: "center" }}
           >
-            <h4 style={{ display: "flex", justifyContent: "center" }}>
+            <h6 style={{ display: "flex", justifyContent: "center" }}>
               Developed & Designed With&nbsp;
-              <FavoriteIcon sx={{ color: "#eb3341", fontSize: "1.1rem" }} />
+              <FavoriteIcon sx={{ color: "#eb3341", fontSize: "0.8rem" }} />
               &nbsp;By Sayan De
-            </h4>
+            </h6>
             <hr style={{ borderBottom: "1px solid white" }} />
           </Grid>
         </Grid>
