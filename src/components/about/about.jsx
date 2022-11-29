@@ -13,10 +13,10 @@ export default function About() {
           <PersonIcon sx={{ fontSize: "2.5rem" }} className="about-icon" />
           &nbsp;About&nbsp;<span style={{ color: "#7303a7" }}>Me</span>
         </div>
-        <h3 className="about-quote">
+        {/* <h3 className="about-quote">
           It is possible to fly without motors, but not without knowledge and
           skill
-        </h3>
+        </h3> */}
       </Grid>
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <h3 className="about-essay">

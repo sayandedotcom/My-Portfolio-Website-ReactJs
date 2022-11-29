@@ -69,7 +69,7 @@ export default function Projects() {
           ))}
         </Masonry>
       </Box> */}
-      <div className="container">
+      {/* <div className="container">
         <div className="card">
           <img src={Calulator} alt="cal" />
           <div className="intro">
@@ -77,7 +77,7 @@ export default function Projects() {
             <p>My name is Sayan De</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </Grid>
   );
 }

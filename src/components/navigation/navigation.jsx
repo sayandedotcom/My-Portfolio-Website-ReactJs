@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navigation.css";
 import {
   AppBar,
@@ -15,15 +15,22 @@ import { FaMapMarkedAlt, FaEnvelope } from "react-icons/fa";
 import navLinks from "./navLinks";
 import footerLinks from "./footerLinks";
 import Drawer from "./drawer";
+// import Toggle from "./toggle";
 function Navigation() {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+  const [isDarkMode, setDarkMode] = useState(false);
   return (
     <>
-      <AppBar position="static" color="default">
+      {/* Navtigation Bar Starts */}
+      <AppBar
+        position="static"
+        // color="default"
+        style={{ backgroundColor: `${isDarkMode ? "grey" : "white"}` }}
+      >
         <Toolbar>
           <Grid container>
-            <Grid item lg={6} md={6} sm={5} xs={9}>
+            <Grid item lg={6} md={9} sm={5} xs={8}>
               <Tooltip title="Go Home" placement="bottom-end" arrow>
                 <Link className="logo" to="/">
                   <h1>&lt;&nbsp;</h1>
@@ -35,32 +42,73 @@ function Navigation() {
             <Grid
               item
               lg={6}
-              md={6}
+              md={3}
               sm={7}
-              xs={3}
+              xs={4}
               className="nav-links-container"
             >
               {isMatch ? (
-                <Drawer navLinks={navLinks} />
-              ) : (
-                navLinks.map(({ to, name }, index) => (
+                <>
                   <Tooltip
-                    key={index}
-                    title={name}
+                    title={`Switch to ${
+                      isDarkMode ? "Light Mode" : "Dark Mode"
+                    }`}
                     placement="bottom-end"
                     arrow
                   >
-                    <NavLink className="nav-link" to={to}>
-                      {name}
-                    </NavLink>
+                    <div
+                      className="toggle"
+                      onClick={() => setDarkMode(!isDarkMode)}
+                    >
+                      <div
+                        className={`circle ${isDarkMode ? "toggleactive" : ""}`}
+                      ></div>
+                    </div>
                   </Tooltip>
-                ))
+                  <Drawer navLinks={navLinks} />
+                </>
+              ) : (
+                <>
+                  {navLinks.map(({ to, name }, index) => (
+                    <Tooltip
+                      key={index}
+                      title={name}
+                      placement="bottom-end"
+                      arrow
+                    >
+                      <NavLink className="nav-link" to={to}>
+                        {name}
+                      </NavLink>
+                    </Tooltip>
+                  ))}
+                  <Tooltip
+                    title={`Switch to ${
+                      isDarkMode ? "Light Mode" : "Dark Mode"
+                    }`}
+                    placement="bottom-end"
+                    arrow
+                  >
+                    <div
+                      className="toggle"
+                      onClick={() => setDarkMode(!isDarkMode)}
+                    >
+                      <div
+                        className={`circle ${isDarkMode ? "toggleactive" : ""}`}
+                      ></div>
+                    </div>
+                  </Tooltip>
+                </>
               )}
             </Grid>
           </Grid>
         </Toolbar>
       </AppBar>
+      {/* Navtigation Bar ENds */}
+
       <Outlet />
+
+      {/* Footer Bar Starts */}
+
       <footer style={{ backgroundColor: "#00012b", color: "white" }}>
         <Grid container p={6}>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
@@ -134,6 +182,7 @@ function Navigation() {
           </Grid>
         </Grid>
       </footer>
+      {/* Footer Bar Starts */}
     </>
   );
 }
