@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./navigation.css";
+import Sun from "../../assests/svg-sun.svg";
 import {
   AppBar,
   Toolbar,
@@ -26,11 +27,11 @@ function Navigation() {
       <AppBar
         position="static"
         // color="default"
-        style={{ backgroundColor: `${isDarkMode ? "grey" : "white"}` }}
+        style={{ backgroundColor: `${isDarkMode ? "#23272f" : "white"}` }}
       >
         <Toolbar>
           <Grid container>
-            <Grid item lg={6} md={9} sm={5} xs={8}>
+            <Grid item lg={6} md={9} sm={5} xs={8.2}>
               <Tooltip title="Go Home" placement="bottom-end" arrow>
                 <Link className="logo" to="/">
                   <h1>&lt;&nbsp;</h1>
@@ -44,7 +45,7 @@ function Navigation() {
               lg={6}
               md={3}
               sm={7}
-              xs={4}
+              xs={3.8}
               className="nav-links-container"
             >
               {isMatch ? (
@@ -110,7 +111,7 @@ function Navigation() {
       {/* Footer Bar Starts */}
 
       <footer style={{ backgroundColor: "#00012b", color: "white" }}>
-        <Grid container p={6}>
+        <Grid container p={3}>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
             <Box>
               <h1 className="footer-heading">My Portfolio</h1>

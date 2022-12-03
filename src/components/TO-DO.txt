@@ -1,0 +1,4 @@
+1. Projects Section
+2. Contact Me Form
+3. Dark Mode 
+4. Mobile Potable spacing & Alignment

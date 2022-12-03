@@ -29,7 +29,7 @@ export default function Home() {
         </h3>
 
         <br />
-        <h2 style={{ color: "#0984ad" }}>Connect With me here :)</h2>
+        <h2 style={{ color: "#0984ad" }}>Connect with me here :)</h2>
 
         {links.map(({ name, link, src }, index) => (
           <a key={index} href={link} target="blank">
