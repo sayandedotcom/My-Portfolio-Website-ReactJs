@@ -2,3 +2,7 @@
 2. Contact Me Form
 3. Dark Mode 
 4. Mobile Potable spacing & Alignment
+5. Change scroll bar
+6. Fixed Button to move Top
+7. Change Projects in TypeScript
+8. Signature in Logo

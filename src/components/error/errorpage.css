@@ -1,7 +1,7 @@
 .error {
   /* margin-top: 2rem; */
   height: 400px;
-  background-image: url("../../assests/error404gif.gif");
+  background-image: url("../../assests/gif-error404.gif");
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -1,9 +1,9 @@
 import OOP from "../../assests/icons8-object-48.png";
-import DSA from "../../assests/icons8-algorithm-48.png";
+import DSA from "../../assests/svg-dsa.svg";
 import RDBMS from "../../assests/svg-database.svg";
-import SE from "../../assests/icons8-software-48.png";
-import Cloud from "../../assests/icons8-cloud48.png";
-import OS from "../../assests/icons8-operating-system-48.png";
+import SE from "../../assests/svg-software-engineering.svg";
+import Cloud from "../../assests/svg-cloud-computing.svg";
+import OS from "../../assests/svg-operating-system.svg";
 import CN from "../../assests/icons8-computer-networks-48.png";
 
 const Subjects = [
