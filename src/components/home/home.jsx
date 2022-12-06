@@ -12,10 +12,10 @@ export default function Home() {
         </h1>
         <br />
         <h3 className="home-paragraph">
-          Welcome to my Website. I am a senior studying Computer Science at the
-          Future Institute of Engineering and Management 👩‍💻. I'm passionate in
-          Front-End Development, Open Source Projects, Software Development and
-          community activities 🤩.
+          Welcome to my Website. I am a senior studying Bachelor's in Computer
+          Application (BCA) at the Future Institute of Engineering and
+          Management . I'm passionate in Front-End Development, Open Source
+          Projects, Software Development and community activities 🤩.
           <br />
           <br />I Am A Self-Taught Developer With A Passion For Web Development
           And Problem Solving. I Have A Strong Background in Software

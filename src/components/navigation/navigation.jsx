@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./navigation.css";
-import Sun from "../../assests/svg-sun.svg";
 import {
   AppBar,
   Toolbar,
@@ -11,6 +10,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { Link, NavLink, Outlet } from "react-router-dom";
+import India from "../../assests/svg-India.svg";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { FaMapMarkedAlt, FaEnvelope } from "react-icons/fa";
 import navLinks from "./navLinks";
@@ -149,12 +149,12 @@ function Navigation() {
               <h1 className="footer-heading">Contact Info</h1>
               <hr style={{ borderTop: "1px solid white" }} />
               <br />
-              <h3>
+              <h3 style={{ display: "flex" }}>
                 <FaEnvelope />
                 &nbsp; sayandeten@gmail.com
               </h3>
-              <h3>
-                <FaMapMarkedAlt /> &nbsp;Kolkata, India-700 061
+              <h3 style={{ display: "flex" }}>
+                <FaMapMarkedAlt /> &nbsp; Kolkata, India-700 061
               </h3>
               {footerLinks.map(
                 ({ id, name, href, fonts }) =>
@@ -179,7 +179,7 @@ function Navigation() {
               <FavoriteIcon sx={{ color: "#eb3341", fontSize: "0.8rem" }} />
               &nbsp;By Sayan De
             </h6>
-            <hr style={{ borderBottom: "1px solid white" }} />
+            <hr style={{ borderTop: "1px solid white" }} />
           </Grid>
         </Grid>
       </footer>

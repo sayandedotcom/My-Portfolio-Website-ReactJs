@@ -1,8 +1,7 @@
 import React from "react";
 import { Grid, LinearProgress } from "@mui/material";
 import "./skills.css";
-import FrontEnd1 from "./frontend1";
-import FrontEnd2 from "./frontend2";
+import FrontEnd from "./frontend";
 import languages from "./languages";
 import Tools from "./tools-and-frameworks";
 import Subjects from "./subjects";
@@ -30,31 +29,37 @@ export default function Skills() {
       </Grid>
 
       <Grid item lg={6} md={6} sm={12} xs={12} p={3} className="skills-title">
-        {FrontEnd1.map(({ name, src, value }, index) => (
-          <div key={index} className="skills-box">
-            <img src={src} alt={name} />
-            <div className="skills-bar">
-              <h2 className="skills-name">{name}</h2>
-              <LinearProgress
-                variant="determinate"
-                value={value}
-                color="info"
-              />
-            </div>
-          </div>
-        ))}
+        {FrontEnd.map(
+          ({ name, src, value }, index) =>
+            index < 11 && (
+              <div key={index} className="skills-box">
+                <img src={src} alt={name} />
+                <div className="skills-bar">
+                  <h2 className="skills-name">{name}</h2>
+                  <LinearProgress
+                    variant="determinate"
+                    value={value}
+                    color="info"
+                  />
+                </div>
+              </div>
+            )
+        )}
       </Grid>
 
       <Grid item lg={6} md={6} sm={12} xs={12} p={3} className="skills-title">
-        {FrontEnd2.map(({ name, src, value }, index) => (
-          <div key={index} className="skills-box">
-            <img src={src} alt={name} />
-            <div className="skills-bar">
-              <h2 className="skills-name">{name}</h2>
-              <LinearProgress variant="determinate" value={value} />
-            </div>
-          </div>
-        ))}
+        {FrontEnd.map(
+          ({ name, src, value }, index) =>
+            index >= 11 && (
+              <div key={index} className="skills-box">
+                <img src={src} alt={name} />
+                <div className="skills-bar">
+                  <h2 className="skills-name">{name}</h2>
+                  <LinearProgress variant="determinate" value={value} />
+                </div>
+              </div>
+            )
+        )}
       </Grid>
 
       <Grid item lg={12} md={12} sm={12} xs={12} p={2}>
