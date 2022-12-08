@@ -3,7 +3,6 @@ import "./projects.css";
 import ProjectsList from "./projectsList";
 import { Grid } from "@mui/material";
 import { FaLaptopCode } from "react-icons/fa";
-
 export default function Projects() {
   return (
     <Grid container className="projects" p={5}>
@@ -17,7 +16,6 @@ export default function Projects() {
           working for it.
         </h3>
       </Grid>
-
       {/* <div className="container">
         <div className="card">
           <img src={Calulator} alt="cal" />

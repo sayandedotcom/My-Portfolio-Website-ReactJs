@@ -2,20 +2,25 @@ import React from "react";
 import { Grid, Tooltip } from "@mui/material";
 import Sayan from "../../assests/My project-removebg-preview.jpg";
 import "./home.css";
+import India from "./India";
 import links from "./links";
 export default function Home() {
   return (
     <Grid container className="home">
       <Grid item lg={6} md={6} sm={12} xs={12} p={5}>
-        <h1 className="home-heading">
-          Hi, I'm <span>Sayan De</span>
-        </h1>
+        <div className="home-heading">
+          Hi, I'm &nbsp;<span>Sayan De</span>
+          <span style={{ marginLeft: "1.2rem" }}>
+            <India />
+          </span>
+        </div>
+
         <br />
         <h3 className="home-paragraph">
           Welcome to my Website. I am a senior studying Bachelor's in Computer
           Application (BCA) at the Future Institute of Engineering and
           Management . I'm passionate in Front-End Development, Open Source
-          Projects, Software Development and community activities 🤩.
+          Projects, Software Development and community activities.
           <br />
           <br />I Am A Self-Taught Developer With A Passion For Web Development
           And Problem Solving. I Have A Strong Background in Software

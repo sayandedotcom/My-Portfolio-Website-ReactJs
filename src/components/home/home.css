@@ -4,6 +4,8 @@
 .home-heading {
   font-size: 3rem;
   color: #002057;
+  display: flex;
+  font-weight: 700;
 }
 .home-heading span {
   color: #0984ad;

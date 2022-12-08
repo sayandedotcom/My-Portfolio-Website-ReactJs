@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, LinearProgress } from "@mui/material";
+import { Grid, LinearProgress, Tooltip } from "@mui/material";
 import "./skills.css";
 import FrontEnd from "./frontend";
 import languages from "./languages";
@@ -34,14 +34,16 @@ export default function Skills() {
             index < 11 && (
               <div key={index} className="skills-box">
                 <img src={src} alt={name} />
-                <div className="skills-bar">
-                  <h2 className="skills-name">{name}</h2>
-                  <LinearProgress
-                    variant="determinate"
-                    value={value}
-                    color="info"
-                  />
-                </div>
+                <Tooltip title={value + `${" %"}`} placement="bottom" arrow>
+                  <div className="skills-bar">
+                    <h2 className="skills-name">{name}</h2>
+                    <LinearProgress
+                      variant="determinate"
+                      value={value}
+                      color="info"
+                    />
+                  </div>
+                </Tooltip>
               </div>
             )
         )}
@@ -53,10 +55,16 @@ export default function Skills() {
             index >= 11 && (
               <div key={index} className="skills-box">
                 <img src={src} alt={name} />
-                <div className="skills-bar">
-                  <h2 className="skills-name">{name}</h2>
-                  <LinearProgress variant="determinate" value={value} />
-                </div>
+                <Tooltip title={value + `${" %"}`} placement="bottom" arrow>
+                  <div className="skills-bar">
+                    <h2 className="skills-name">{name}</h2>
+                    <LinearProgress
+                      variant="determinate"
+                      value={value}
+                      color="info"
+                    />
+                  </div>
+                </Tooltip>
               </div>
             )
         )}
@@ -71,10 +79,16 @@ export default function Skills() {
         {languages.map(({ name, src, value }, index) => (
           <div key={index} className="skills-box">
             <img src={src} alt={name} />
-            <div className="skills-bar">
-              <h2 className="skills-name">{name}</h2>
-              <LinearProgress variant="determinate" value={value} />
-            </div>
+            <Tooltip title={value + `${" %"}`} placement="bottom" arrow>
+              <div className="skills-bar">
+                <h2 className="skills-name">{name}</h2>
+                <LinearProgress
+                  variant="determinate"
+                  value={value}
+                  color="info"
+                />
+              </div>
+            </Tooltip>
           </div>
         ))}
       </Grid>
@@ -84,10 +98,16 @@ export default function Skills() {
         {Tools.map(({ name, src, value }, index) => (
           <div key={index} className="skills-box">
             <img src={src} alt={name} />
-            <div className="skills-bar">
-              <h2 className="skills-name">{name}</h2>
-              <LinearProgress variant="determinate" value={value} />
-            </div>
+            <Tooltip title={value + `${" %"}`} placement="bottom" arrow>
+              <div className="skills-bar">
+                <h2 className="skills-name">{name}</h2>
+                <LinearProgress
+                  variant="determinate"
+                  value={value}
+                  color="info"
+                />
+              </div>
+            </Tooltip>
           </div>
         ))}
       </Grid>
@@ -97,10 +117,16 @@ export default function Skills() {
         {Subjects.map(({ name, src, value }, index) => (
           <div key={index} className="skills-box">
             <img src={src} alt={name} />
-            <div className="skills-bar">
-              <h2 className="skills-name">{name}</h2>
-              <LinearProgress variant="determinate" value={value} />
-            </div>
+            <Tooltip title={value + `${" %"}`} placement="bottom" arrow>
+              <div className="skills-bar">
+                <h2 className="skills-name">{name}</h2>
+                <LinearProgress
+                  variant="determinate"
+                  value={value}
+                  color="info"
+                />
+              </div>
+            </Tooltip>
           </div>
         ))}
       </Grid>
