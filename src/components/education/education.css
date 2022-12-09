@@ -23,9 +23,10 @@
   border-radius: 6px;
   cursor: pointer;
   position: relative;
+  box-shadow: 0px 5px 10px rgb(48 68 247 / 60%);
 }
 .education-content-box-right:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 5px 10px rgb(48 68 247 / 60%);
   margin-bottom: 20px;
 }
 .education-content-text-right {
@@ -39,9 +40,10 @@
   border-radius: 6px;
   cursor: pointer;
   position: relative;
+  box-shadow: 0px 5px 10px rgb(48 68 247 / 60%);
 }
 .education-content-box-left:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 5px 10px rgb(48 68 247 / 60%);
 }
 .education-content-text-left {
   margin-left: 15px;

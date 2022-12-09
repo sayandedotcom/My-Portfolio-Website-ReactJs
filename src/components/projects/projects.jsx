@@ -2,7 +2,8 @@ import React from "react";
 import "./projects.css";
 import ProjectsList from "./projectsList";
 import { Grid } from "@mui/material";
-import { FaLaptopCode } from "react-icons/fa";
+import { FaLaptopCode, FaCode, FaEye } from "react-icons/fa";
+// import PortFolio from "../../assests/image-portfolio.png";
 export default function Projects() {
   return (
     <Grid container className="projects" p={5}>
@@ -16,15 +17,42 @@ export default function Projects() {
           working for it.
         </h3>
       </Grid>
-      {/* <div className="container">
-        <div className="card">
-          <img src={Calulator} alt="cal" />
-          <div className="intro">
-            <h1>Calculator</h1>
-            <p>My name is Sayan De</p>
+
+      {ProjectsList.map(({ img, title, live, code, bio }, index) => (
+        <Grid item lg={6} md={6} sm={12} xs={12} className="container">
+          <div key={index} className="card">
+            <img src={img} alt="pic" />
+            <div className="intro">
+              <h1 className="intro-title">{title}</h1>
+              <p className="intro-desc">{bio}</p>
+              <div className="projects-button">
+                <a
+                  href={live}
+                  target="blank"
+                  style={{ textDecoration: "none" }}
+                >
+                  <button className="projects-btn">
+                    {" "}
+                    <FaEye />
+                    &nbsp; View
+                  </button>
+                </a>
+                <a
+                  href={code}
+                  target="blank"
+                  style={{ textDecoration: "none" }}
+                >
+                  <button className="projects-btn">
+                    {" "}
+                    <FaCode />
+                    &nbsp; Code
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div> */}
+        </Grid>
+      ))}
     </Grid>
   );
 }

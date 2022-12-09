@@ -3,10 +3,10 @@ import "./education.css";
 import EducationWeb from "./education-web";
 import EducationMobile from "./education-mobile";
 import { useState } from "react";
-import { useTheme, useMediaQuery } from "@mui/material";
+// import { useTheme, useMediaQuery } from "@mui/material";
 function Education() {
-  const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+  // const theme = useTheme();
+  // const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   // {isMatch ? <EducationMobile/> : <EducationWeb/>}
 

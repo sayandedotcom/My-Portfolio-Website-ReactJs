@@ -1,21 +1,14 @@
 import React, { useState } from "react";
 import "./navigation.css";
-import {
-  AppBar,
-  Toolbar,
-  Grid,
-  Box,
-  Tooltip,
-  useTheme,
-  useMediaQuery,
-} from "@mui/material";
+import { Grid, Tooltip, useTheme, useMediaQuery } from "@mui/material";
 import { Link, NavLink, Outlet } from "react-router-dom";
-import India from "../../assests/svg-India.svg";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { FaMapMarkedAlt, FaEnvelope } from "react-icons/fa";
 import navLinks from "./navLinks";
 import footerLinks from "./footerLinks";
 import Drawer from "./drawer";
+import GotoButton from "../gotobutton/gotobutton";
+import Sig from "./signature2";
 // import Toggle from "./toggle";
 function Navigation() {
   const theme = useTheme();
@@ -24,12 +17,8 @@ function Navigation() {
   return (
     <>
       {/* Navtigation Bar Starts */}
-      <AppBar
-        position="static"
-        // color="default"
-        style={{ backgroundColor: `${isDarkMode ? "#23272f" : "white"}` }}
-      >
-        <Toolbar>
+      <>
+        <div className="navbar" theme={isDarkMode ? "dark" : ""}>
           <Grid container>
             <Grid item lg={6} md={9} sm={5} xs={8.2}>
               <Tooltip title="Go Home" placement="bottom-end" arrow>
@@ -37,6 +26,7 @@ function Navigation() {
                   <h1>&lt;&nbsp;</h1>
                   <h1>Sayan De</h1>
                   <h1>&nbsp;/&gt;</h1>
+                  {/* <Sig /> */}
                 </Link>
               </Tooltip>
             </Grid>
@@ -54,7 +44,7 @@ function Navigation() {
                     title={`Switch to ${
                       isDarkMode ? "Light Mode" : "Dark Mode"
                     }`}
-                    placement="bottom-end"
+                    placement="bottom"
                     arrow
                   >
                     <div
@@ -71,12 +61,7 @@ function Navigation() {
               ) : (
                 <>
                   {navLinks.map(({ to, name }, index) => (
-                    <Tooltip
-                      key={index}
-                      title={name}
-                      placement="bottom-end"
-                      arrow
-                    >
+                    <Tooltip key={index} title={name} placement="bottom" arrow>
                       <NavLink className="nav-link" to={to}>
                         {name}
                       </NavLink>
@@ -102,69 +87,66 @@ function Navigation() {
               )}
             </Grid>
           </Grid>
-        </Toolbar>
-      </AppBar>
+        </div>
+        <hr className="horizontal-line" />
+      </>
       {/* Navtigation Bar ENds */}
 
       <Outlet />
 
       {/* Footer Bar Starts */}
 
-      <footer style={{ backgroundColor: "#00012b", color: "white" }}>
+      <footer className="footer" theme={isDarkMode ? "dark" : ""}>
+        <hr className="horizontal-line" />
         <Grid container p={3}>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
-            <Box>
-              <h1 className="footer-heading">My Portfolio</h1>
-              <hr style={{ borderTop: "1px solid white" }} />
+            <h1 className="footer-heading">My Portfolio</h1>
+            <hr className="horizontal-line" />
+            <br />
+            <h4>
+              Thank you for visiting my personal portfolio website. Connect with
+              me over socials.
               <br />
-              <h4>
-                Thank you for visiting my personal portfolio website. Connect
-                with me over socials.
-                <br />
-                <br />
-                Please wait for a while all major projects will be listed soon.
-                Till then keep visiting. Connect with me over live chat!
-              </h4>
-            </Box>
+              <br />
+              Please wait for a while all major projects will be listed soon.
+              Till then keep visiting. Connect with me over live chat!
+            </h4>
           </Grid>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
-            <Box>
-              <h1 className="footer-heading">Quick Links</h1>
-              <hr style={{ borderTop: "1px solid white" }} />
-              <br />
-              {footerLinks.map(
-                ({ id, name, href, fonts }) =>
-                  id <= 6 && (
-                    <a key={id} className="quick-links" href={href}>
-                      {fonts}
-                      &nbsp;{name}
-                    </a>
-                  )
-              )}
-            </Box>
+            <h1 className="footer-heading">Quick Links</h1>
+            <hr className="horizontal-line" />
+            <br />
+            {footerLinks.map(
+              ({ id, name, href, fonts }) =>
+                id <= 6 && (
+                  <a key={id} className="quick-links" href={href}>
+                    {fonts}
+                    &nbsp;{name}
+                  </a>
+                )
+            )}
           </Grid>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
-            <Box>
-              {" "}
-              <h1 className="footer-heading">Contact Info</h1>
-              <hr style={{ borderTop: "1px solid white" }} />
-              <br />
-              <h3 style={{ display: "flex" }}>
-                <FaEnvelope />
-                &nbsp; sayandeten@gmail.com
-              </h3>
-              <h3 style={{ display: "flex" }}>
-                <FaMapMarkedAlt /> &nbsp; Kolkata, India-700 061
-              </h3>
-              {footerLinks.map(
-                ({ id, name, href, fonts }) =>
-                  id > 6 && (
-                    <a key={id} href={href} target="blank">
-                      {fonts}
-                    </a>
-                  )
-              )}
-            </Box>
+            {" "}
+            <h1 className="footer-heading">Contact Info</h1>
+            <hr className="horizontal-line" />
+            <br />
+            <h3 style={{ display: "flex", alignItems: "center" }}>
+              <FaEnvelope />
+              &nbsp; sayandeten@gmail.com
+            </h3>
+            <h3 style={{ display: "flex", alignItems: "center" }}>
+              <FaMapMarkedAlt /> &nbsp; Kolkata, India-700 061
+            </h3>
+            {footerLinks.map(
+              ({ id, name, href, fonts }) =>
+                id > 6 && (
+                  <a key={id} href={href} target="blank">
+                    {fonts}
+                  </a>
+                )
+            )}
+            <GotoButton />
           </Grid>
           <Grid
             item
@@ -179,10 +161,11 @@ function Navigation() {
               <FavoriteIcon sx={{ color: "#eb3341", fontSize: "0.8rem" }} />
               &nbsp;By Sayan De
             </h6>
-            <hr style={{ borderTop: "1px solid white" }} />
+            <hr className="horizontal-line" />
           </Grid>
         </Grid>
       </footer>
+
       {/* Footer Bar Starts */}
     </>
   );

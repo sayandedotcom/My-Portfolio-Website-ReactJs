@@ -1,10 +1,27 @@
+/* Navigation Bar Starts*/
+.navbar {
+  --navbar-background-color: white;
+  --navbar-color: black;
+  --hover-color: #011aff;
+  --acrive-border-bottom: 0.2rem solid #011aff;
+  --toggle-background-color: rgb(255, 255, 255);
+}
+.navbar[theme="dark"] {
+  --navbar-background-color: black;
+  --navbar-color: white;
+  --hover-color: white;
+  --acrive-border-bottom: 0.2rem solid white;
+  --toggle-background-color: grey;
+}
+.navbar {
+  background-color: var(--navbar-background-color);
+  padding: 0.6rem;
+}
 .logo {
-  color: black;
+  color: var(--navbar-color);
   font-size: 1.15rem;
   font-family: "Itim", cursive;
-  /* font-family: "Roboto", sans-serif; */
   text-decoration: none;
-  /* font-weight: 700; */
   display: inline-flex;
 }
 .nav-links-container {
@@ -12,53 +29,29 @@
   justify-content: space-around;
 }
 .nav-link {
-  color: black;
+  color: var(--navbar-color);
   font-size: 1.2rem;
   font-family: "Itim", cursive;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   text-decoration: none;
   padding: 10px 8px;
-  /* justify-content: space-around; */
 }
 .nav-link:hover {
-  color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
+  color: var(--hover-color);
+  border-bottom: 0.2rem solid var(--hover-color);
 }
 .active {
-  color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
-}
-.quick-links {
-  color: azure;
-  text-decoration: none;
-  padding: 5px;
-  display: flex;
-}
-.quick-links:hover {
-  color: #3f1be5;
-}
-.fonts {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: azure;
-  margin-right: 0.5rem;
-  margin-top: 1rem;
-}
-.fonts:hover {
-  color: #3f1be5;
-}
-.footer-heading {
-  padding-bottom: 1.5rem;
+  color: var(--hover-color);
+  border-bottom: 0.2rem solid var(--hover-color);
 }
 .toggle {
   height: 25px;
   width: 50px;
   border-radius: 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--toggle-background-color);
   margin: 10px;
-  /* border: 1px solid #011aff; */
-  outline: 2px solid #011aff;
+  outline: 2px solid var(--hover-color);
 }
 .circle {
   height: 25px;
@@ -72,8 +65,50 @@
 }
 .toggleactive {
   margin-left: 25px;
-  background-color: #3c4145;
+  background-color: #070707;
   background-image: url("../../assests/svg-moon.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+/* Navigation Bar Ends*/
+
+/* Footer Starts */
+.footer {
+  --background-color: #00012b;
+  --color: white;
+  --hover: #3f1be5;
+}
+.footer[theme="dark"] {
+  --background-color: #000000;
+  --color: white;
+  --hover: grey;
+}
+.footer {
+  background-color: var(--background-color);
+  color: var(--color);
+}
+.footer-heading {
+  padding-bottom: 1.5rem;
+}
+.horizontal-line {
+  border-top: 0.1px solid white;
+}
+.quick-links {
+  color: azure;
+  text-decoration: none;
+  padding: 5px;
+  display: flex;
+}
+.quick-links:hover {
+  color: var(--hover);
+}
+.fonts {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: azure;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+.fonts:hover {
+  color: var(--hover);
 }

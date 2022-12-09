@@ -1,7 +1,16 @@
 import React from "react";
 import { Grid, Tooltip } from "@mui/material";
 import "./contactme.css";
-import { FaPhoneAlt } from "react-icons/fa";
+import {
+  FaHeadset,
+  FaPhoneAlt,
+  FaTelegramPlane,
+  FaUser,
+  FaEnvelope,
+  FaCommentDots,
+} from "react-icons/fa";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+
 import links from "../home/links";
 export default function Contactme() {
   return (
@@ -47,6 +56,63 @@ export default function Contactme() {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+      </Grid>
+
+      <Grid item lg={12} md={12} sm={12} xs={12} p={2}>
+        <h1
+          style={{ padding: "15px", display: "flex", justifyContent: "center" }}
+        >
+          {" "}
+          <FaHeadset />
+          &nbsp; Get In Touch
+        </h1>
+        <form className="form" action="#" method="POST">
+          <div className="input">
+            <FaUser className="input-icon" />
+            <input
+              type="text"
+              name="Name"
+              placeholder="Name"
+              autoComplete="off"
+              required
+            ></input>
+          </div>
+
+          <div className="input">
+            <FaEnvelope className="input-icon" />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email"
+              autoComplete="off"
+              required
+            ></input>
+          </div>
+
+          <div className="input">
+            <FaPhoneAlt className="input-icon" />
+            <input
+              type="tel"
+              name="Tel"
+              placeholder="Phone"
+              autoComplete="off"
+              required
+            ></input>
+          </div>
+          <div className="textarea">
+            <FaCommentDots className="textarea-icon" />
+            <textarea
+              name="message"
+              placeholder="Message"
+              autoComplete="off"
+              required
+            ></textarea>
+          </div>
+          <button className="contact-button">
+            Submit&nbsp;
+            <FaTelegramPlane className="contact-btn-icon" />
+          </button>
+        </form>
       </Grid>
     </Grid>
   );

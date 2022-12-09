@@ -2,10 +2,10 @@
   background-color: #f7f7f7;
 }
 .home-heading {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #002057;
-  display: flex;
-  font-weight: 700;
+  /* display: flex; */
+  font-weight: 600;
 }
 .home-heading span {
   color: #0984ad;

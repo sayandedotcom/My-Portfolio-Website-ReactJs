@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Button } from "@mui/material";
+import { Grid } from "@mui/material";
 import "./about.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import File from "../../assests/SayanDeCV.pdf";
@@ -92,16 +92,10 @@ export default function About() {
           </h3>
           <br />
           <a href={File} target="blank" style={{ textDecoration: "none" }}>
-            {" "}
-            <Button
-              sx={{ my: 6 }}
-              variant="contained"
-              size="large"
-              endIcon={<NavigateNextIcon />}
-              // onClick={() => (window.location.href = { File })}
-            >
-              My Resume
-            </Button>
+            <button className="about-button">
+              Resume
+              <NavigateNextIcon className="about-resume-icon" />
+            </button>
           </a>
         </h3>
       </Grid>

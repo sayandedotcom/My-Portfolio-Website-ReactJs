@@ -1,5 +1,6 @@
 .projects {
   background-color: #131391;
+  background: linear-gradient(to bottom, #2121e2, #00002c);
   color: white;
 }
 .projects-icon {
@@ -24,29 +25,64 @@
 }
 .container {
   display: flex;
+  justify-content: center;
 }
 .card {
-  /* height: 500px; */
-  /* width: 50px; */
-  box-shadow: 5px 5px 20px black;
+  height: 290px;
+  width: 610px;
+  position: relative;
   overflow: hidden;
-  border-radius: 25px;
-}
-.img {
-  /* height: 500px; */
-  /* width: 350px; */
-  border-radius: 10px;
-}
-.intro {
-  height: 200px;
-  width: 350px;
-  padding: 6px;
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 240px;
-  background-color: rgb(27, 27, 27);
-  color: white;
+  border-radius: 7px;
+  margin: 20px;
+  box-shadow: 0 0.5rem 1rem rgb(255, 255, 255);
 }
 .card:hover {
   cursor: pointer;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+.intro {
+  height: 230px;
+  width: 610px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -150px;
+  /* bottom: 0px; */
+  background-color: rgba(255, 255, 255, 0.889);
+  border-radius: 7px 7px 0px 0px;
+  overflow: hidden;
+}
+.intro:hover {
+  bottom: 0px;
+  transition: 0.3s;
+}
+.intro-title {
+  background-color: #0f46a2;
+  padding: 1.2rem;
+}
+.intro-desc {
+  padding: 1rem;
+  color: black;
+  font-weight: 600;
+}
+.projects-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+}
+.projects-btn {
+  display: flex;
+  font-size: 1rem;
+  padding: 14px 32px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.projects-btn:hover {
+  background-color: #2b3dda;
 }

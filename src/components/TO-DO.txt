@@ -1,8 +1,11 @@
-1. Projects Section
+1. Projects Section [In Progress]
 2. Contact Me Form
-3. Dark Mode 
-4. Mobile Potable spacing & Alignment
+3. Dark Mode [In Progress]
+4. Mobile Potable Spacing & Alignment
 5. Change scroll bar [Done]
-6. Fixed Button to move Top
+6. Fixed Button to move Top [Done]
 7. Change Projects in TypeScript
 8. Signature in Logo
+9. Make Toggle Component
+10. Change CSs to SASS
+&nbsp;

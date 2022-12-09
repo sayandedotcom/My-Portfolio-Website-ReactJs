@@ -9,9 +9,9 @@ export default function Home() {
     <Grid container className="home">
       <Grid item lg={6} md={6} sm={12} xs={12} p={5}>
         <div className="home-heading">
-          Hi, I'm &nbsp;<span>Sayan De</span>
-          <span style={{ marginLeft: "1.2rem" }}>
-            <India />
+          Hi, I'm{" "}
+          <span>
+            Sayan De <India />
           </span>
         </div>
 
