@@ -28,7 +28,7 @@ const ProjectsList = [
   {
     img: Portfolio,
     title: "Portfolio Website",
-    live: "https://sayande.netlify.app/",
+    live: "https://sayande.tech/",
     code: "https://github.com/sayande2002/My-Portfolio-Website-ReactJs",
     bio: "My Portfolio website made with React JS, React Router, Material UI",
   },
