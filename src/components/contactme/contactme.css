@@ -76,8 +76,8 @@
   border: 1px solid rgb(51, 51, 51);
   min-height: 130px;
   max-height: 230px;
-  max-width: 100%;
-  min-width: 100%;
+  /* max-width: 100%;
+  min-width: 100%; */
   padding: 12px 20px 0 48px;
 }
 .textarea-icon {

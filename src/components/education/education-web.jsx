@@ -14,10 +14,7 @@ import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import "./education.css";
 export default function EducationWeb() {
   return (
-    <Grid
-      container
-      sx={{ backgroundColor: "#e5ecfb", fontFamily: "Poppins, sans-serif" }}
-    >
+    <Grid container className="education">
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="education-heading">
           <FaGraduationCap className="education-icon" />

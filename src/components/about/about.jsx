@@ -87,7 +87,11 @@ export default function About() {
             <span style={{ fontSize: "1.3rem" }}> ~ Sayan De</span>
           </h3>
           <br />
-          <a href={File} target="blank" style={{ textDecoration: "none" }}>
+          <a
+            href={File}
+            target="blank"
+            style={{ textDecoration: "none", display: "inline-block" }}
+          >
             <button className="about-button">
               Resume
               <NavigateNextIcon className="about-resume-icon" />

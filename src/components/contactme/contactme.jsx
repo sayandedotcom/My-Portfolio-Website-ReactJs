@@ -9,7 +9,6 @@ import {
   FaEnvelope,
   FaCommentDots,
 } from "react-icons/fa";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 import links from "../home/links";
 export default function Contactme() {

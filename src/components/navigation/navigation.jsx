@@ -8,11 +8,12 @@ import navLinks from "./navLinks";
 import footerLinks from "./footerLinks";
 import Drawer from "./drawer";
 import GotoButton from "../gotobutton/gotobutton";
-// import Sig from "./signature2";
+import Sig from "./signature2";
 // import Toggle from "./toggle";
+// import Sig1 from "./signature";
 function Navigation() {
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+  const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
   const [isDarkMode, setDarkMode] = useState(false);
   return (
     <>
@@ -20,13 +21,14 @@ function Navigation() {
       <>
         <div className="navbar" theme={isDarkMode ? "dark" : ""}>
           <Grid container>
-            <Grid item lg={6} md={9} sm={5} xs={8.2}>
-              <Tooltip title="Go Home" placement="bottom-end" arrow>
+            <Grid item lg={6} md={9} sm={5} xs={8.2} className="logo-gird">
+              <Tooltip title="Go Home" followCursor arrow>
                 <Link className="logo" to="/">
-                  <h1>&lt;&nbsp;</h1>
+                  {/* <h1>&lt;&nbsp;</h1>
                   <h1>Sayan De</h1>
-                  <h1>&nbsp;/&gt;</h1>
-                  {/* <Sig /> */}
+                  <h1>&nbsp;/&gt;</h1> */}
+                  <Sig />
+                  {/* <Sig1 /> */}
                 </Link>
               </Tooltip>
             </Grid>
@@ -39,7 +41,7 @@ function Navigation() {
               className="nav-links-container"
             >
               {isMatch ? (
-                <>
+                <div className="toggle-drawer">
                   <Tooltip
                     title={`Switch to ${
                       isDarkMode ? "Light Mode" : "Dark Mode"
@@ -57,7 +59,7 @@ function Navigation() {
                     </div>
                   </Tooltip>
                   <Drawer navLinks={navLinks} />
-                </>
+                </div>
               ) : (
                 <>
                   {navLinks.map(({ to, name }, index) => (
@@ -109,7 +111,7 @@ function Navigation() {
               <br />
               <br />
               Please wait for a while all major projects will be listed soon.
-              Till then keep visiting. Connect with me over live chat!
+              Till then keep visiting. Connect with me over chat or message me !
             </h4>
           </Grid>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
@@ -159,12 +161,18 @@ function Navigation() {
             xs={12}
             sx={{ textAlign: "center" }}
           >
-            <h6 style={{ display: "flex", justifyContent: "center" }}>
-              Developed & Designed With&nbsp;
-              <FavoriteIcon sx={{ color: "#eb3341", fontSize: "0.8rem" }} />
-              &nbsp;By Sayan De
-            </h6>
             <hr className="horizontal-line" />
+            <h5
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                padding: "2%",
+              }}
+            >
+              Developed & Designed With&nbsp;
+              <FavoriteIcon sx={{ color: "#eb3341", fontSize: "1rem" }} />
+              &nbsp;By Sayan De
+            </h5>
           </Grid>
         </Grid>
       </footer>

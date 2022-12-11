@@ -30,10 +30,7 @@ function DrawerC({ navLinks }) {
         </List>
       </Drawer>
 
-      <IconButton
-        sx={{ marginLeft: "auto", color: "black" }}
-        onClick={() => setOpen(!open)}
-      >
+      <IconButton sx={{ color: "black" }} onClick={() => setOpen(!open)}>
         <MenuRoundedIcon />
       </IconButton>
     </>
@@ -41,3 +38,4 @@ function DrawerC({ navLinks }) {
 }
 
 export default DrawerC;
+// marginLeft: "auto",

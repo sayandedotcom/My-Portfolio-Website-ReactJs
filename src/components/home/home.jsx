@@ -18,7 +18,7 @@ export default function Home() {
         <br />
         <h3 className="home-paragraph">
           Welcome to my Website. I am a senior studying Bachelor's in Computer
-          Application (BCA) at the Future Institute of Engineering and
+          Application [BCA] at the Future Institute of Engineering and
           Management . I'm passionate in Front-End Development, Open Source
           Projects, Software Development and community activities.
           <br />

@@ -5,24 +5,35 @@
   --hover-color: #011aff;
   --acrive-border-bottom: 0.2rem solid #011aff;
   --toggle-background-color: rgb(255, 255, 255);
+  --svg: #000000;
 }
 .navbar[theme="dark"] {
-  --navbar-background-color: black;
+  --navbar-background-color: #0f0f0f;
   --navbar-color: white;
   --hover-color: white;
   --acrive-border-bottom: 0.2rem solid white;
   --toggle-background-color: grey;
+  --svg: white;
 }
 .navbar {
   background-color: var(--navbar-background-color);
-  padding: 0.6rem;
+  padding: 0.5rem;
 }
+/* .logo-gird {
+  display: flex;
+  justify-content: flex-start;
+} */
 .logo {
   color: var(--navbar-color);
-  font-size: 1.15rem;
-  font-family: "Itim", cursive;
-  text-decoration: none;
-  display: inline-flex;
+  /* font-size: 1.15rem; */
+  /* font-family: "Itim", cursive; */
+  /* text-decoration: none; */
+  display: flex;
+  justify-content: flex-start;
+  /* display: inline-block; */
+}
+svg > g {
+  fill: var(--svg);
 }
 .nav-links-container {
   display: flex;
@@ -44,6 +55,10 @@
 .active {
   color: var(--hover-color);
   border-bottom: 0.2rem solid var(--hover-color);
+}
+.toggle-drawer {
+  display: flex;
+  margin-left: auto;
 }
 .toggle {
   height: 25px;
@@ -80,7 +95,7 @@
   --hover: #3f1be5;
 }
 .footer[theme="dark"] {
-  --background-color: #000000;
+  --background-color: #0f0f0f;
   --color: white;
   --hover: grey;
 }
