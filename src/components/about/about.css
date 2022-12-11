@@ -4,15 +4,13 @@
 }
 .about-icon {
   margin-top: 2px;
-  /* font-size: 2.5rem;
-  font-weight: 900; */
 }
 .about-icon:hover {
   color: #7303a7;
 }
 .about-heading {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   font-size: 2.3rem;
@@ -47,6 +45,7 @@
   stroke: white;
   stroke-width: 2;
 }
-.about-button:hover {
-  background-color: #7303a7;
+.about-button:hover .about-resume-icon {
+  margin-left: 3%;
+  transition: all 0.4s;
 }

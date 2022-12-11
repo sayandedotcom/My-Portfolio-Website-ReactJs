@@ -8,7 +8,7 @@ import navLinks from "./navLinks";
 import footerLinks from "./footerLinks";
 import Drawer from "./drawer";
 import GotoButton from "../gotobutton/gotobutton";
-import Sig from "./signature2";
+// import Sig from "./signature2";
 // import Toggle from "./toggle";
 function Navigation() {
   const theme = useTheme();
@@ -138,14 +138,17 @@ function Navigation() {
             <h3 style={{ display: "flex", alignItems: "center" }}>
               <FaMapMarkedAlt /> &nbsp; Kolkata, India-700 061
             </h3>
-            {footerLinks.map(
-              ({ id, name, href, fonts }) =>
-                id > 6 && (
-                  <a key={id} href={href} target="blank">
-                    {fonts}
-                  </a>
-                )
-            )}
+            <div className="footer-icons">
+              {" "}
+              {footerLinks.map(
+                ({ id, name, href, fonts }) =>
+                  id > 6 && (
+                    <a key={id} href={href} target="blank">
+                      {fonts}
+                    </a>
+                  )
+              )}
+            </div>
             <GotoButton />
           </Grid>
           <Grid

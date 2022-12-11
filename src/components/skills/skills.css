@@ -1,5 +1,5 @@
 .skills {
-  background-color: #5604a4;
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
   color: white;
 }
 .skill-icon {
@@ -11,7 +11,7 @@
 }
 .skills-heading {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   font-size: 2.3rem;

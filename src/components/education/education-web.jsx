@@ -24,10 +24,10 @@ export default function EducationWeb() {
           &nbsp;My <span style={{ color: "#7303a7" }}>&nbsp;Educations</span>
         </div>
         <div className="education-quote">
-          <h3>
+          <h5>
             Education Is Not The Learning Of Facts, But The Training Of The Mind
             To Think.
-          </h3>
+          </h5>
         </div>
       </Grid>
 

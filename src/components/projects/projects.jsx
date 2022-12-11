@@ -3,19 +3,18 @@ import "./projects.css";
 import ProjectsList from "./projectsList";
 import { Grid } from "@mui/material";
 import { FaLaptopCode, FaCode, FaEye } from "react-icons/fa";
-// import PortFolio from "../../assests/image-portfolio.png";
 export default function Projects() {
   return (
-    <Grid container className="projects" p={5}>
+    <Grid container className="projects" p={4}>
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="projects-heading">
           <FaLaptopCode className="projects-icon" />
           &nbsp;My <span style={{ color: "#ffe600" }}>&nbsp;Projects</span>
         </div>
-        <h3 className="projects-quote">
+        <h5 className="projects-quote">
           A project is complete when it starts working for you, rather than you
           working for it.
-        </h3>
+        </h5>
       </Grid>
 
       {ProjectsList.map(({ img, title, live, code, bio }, index) => (
@@ -23,7 +22,7 @@ export default function Projects() {
           <div key={index} className="card">
             <img src={img} alt="pic" />
             <div className="intro">
-              <h1 className="intro-title">{title}</h1>
+              <h2 className="intro-title">{title}</h2>
               <p className="intro-desc">{bio}</p>
               <div className="projects-button">
                 <a
@@ -53,6 +52,9 @@ export default function Projects() {
           </div>
         </Grid>
       ))}
+      <h3 style={{ marginTop: "4%", marginLeft: "auto" }}>
+        More Projects Comming Soon......
+      </h3>
     </Grid>
   );
 }

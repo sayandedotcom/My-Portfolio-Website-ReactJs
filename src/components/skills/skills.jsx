@@ -9,17 +9,17 @@ import { FaLaptopCode } from "react-icons/fa";
 
 export default function Skills() {
   return (
-    <Grid container className="skills" p={5}>
+    <Grid container className="skills" p={4}>
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="skills-heading">
           <FaLaptopCode className="skill-icon" />
           &nbsp;Skills&nbsp;&{" "}
           <span style={{ color: "#ffe600" }}>&nbsp;Abilities</span>
         </div>
-        <h3 className="skills-quote">
+        <h5 className="skills-quote">
           It is possible to fly without motors, but not without knowledge and
           skill
-        </h3>
+        </h5>
       </Grid>
 
       <Grid item lg={12} md={12} sm={12} xs={12} p={2}>

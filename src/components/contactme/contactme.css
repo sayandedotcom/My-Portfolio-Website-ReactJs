@@ -11,7 +11,7 @@
 }
 .contactme-heading {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   font-size: 2.3rem;
@@ -22,21 +22,36 @@
   text-align: center;
   font-weight: 600;
 }
+.map {
+  border: 3px solid #2506ad;
+}
+.form-container {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+}
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .input {
   display: flex;
   height: 3rem;
-  width: 100%;
   border-radius: 10px;
   max-width: 500px;
-  min-width: 300px;
+  width: 100%;
+  position: relative;
+}
+.input input {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background-color: #e5ecfb;
+  padding: 0 16px 0 48px;
+  border: 1.5px solid rgb(51, 51, 51);
 }
 .input-icon {
   position: absolute;
@@ -45,32 +60,25 @@
   margin-left: 13px;
   margin-top: 11px;
 }
-.input input {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  background-color: white;
-  padding-left: 12%;
-  border: 1px solid rgb(51, 51, 51);
-}
 .textarea {
   display: flex;
   height: 10rem;
   width: 100%;
   border-radius: 10px;
   max-width: 500px;
-  min-width: 300px;
 }
 .textarea textarea {
   height: 100%;
   width: 100%;
   border-radius: 10px;
   font-size: 1.5rem;
-  background-color: white;
-  padding-top: 0.8rem;
-  padding-left: 12%;
+  background-color: #e5ecfb;
   border: 1px solid rgb(51, 51, 51);
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 12px 20px 0 48px;
 }
 .textarea-icon {
   position: absolute;
@@ -80,10 +88,11 @@
   margin-top: 18px;
 }
 .contact-button {
+  display: flex;
   cursor: pointer;
   align-items: center;
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 800;
   padding: 14px 32px;
   border-radius: 7px;
   cursor: pointer;
@@ -91,9 +100,10 @@
   background-color: #2506ad;
   border: none;
   box-shadow: 0px 5px 10px rgb(48 68 247 / 60%);
-  width: 150px;
 }
 .contact-btn-icon {
   stroke: white;
-  font-size: 1.1rem;
+  top: 6px;
+  left: 2px;
+  font-size: 1.5rem;
 }

@@ -12,14 +12,13 @@
 }
 .projects-heading {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   font-size: 2.3rem;
   font-weight: 600;
 }
 .projects-quote {
-  margin-top: 1rem;
   text-align: center;
   font-weight: 600;
 }
@@ -33,38 +32,38 @@
   position: relative;
   overflow: hidden;
   border-radius: 7px;
-  margin: 20px;
+  margin: 15px;
   box-shadow: 0 0.5rem 1rem rgb(255, 255, 255);
 }
 .card:hover {
   cursor: pointer;
 }
+.card:hover .intro {
+  bottom: 0%;
+}
 .card img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
-
 .intro {
-  height: 230px;
-  width: 610px;
+  height: 215px;
+  width: 100%;
   box-sizing: border-box;
   position: absolute;
   bottom: -150px;
-  /* bottom: 0px; */
   background-color: rgba(255, 255, 255, 0.889);
   border-radius: 7px 7px 0px 0px;
   overflow: hidden;
+  transition: all 0.3s;
 }
-.intro:hover {
-  bottom: 0px;
-  transition: 0.3s;
-}
+
 .intro-title {
   background-color: #0f46a2;
   padding: 1.2rem;
 }
 .intro-desc {
-  padding: 1rem;
+  padding: 0.7rem;
   color: black;
   font-weight: 600;
 }

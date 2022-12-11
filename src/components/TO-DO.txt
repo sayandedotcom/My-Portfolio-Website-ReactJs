@@ -9,3 +9,6 @@
 9. Make Toggle Component
 10. Change CSs to SASS
 &nbsp;
+padding 4 container
+heading padding 1.5rem
+quote h5
