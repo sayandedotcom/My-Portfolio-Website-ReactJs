@@ -65,17 +65,17 @@ const Tools = [
     src: Linux,
     value: 80,
   },
-  {
-    name: "Heroku",
-    src: Heroku,
-    value: 80,
-  },
+  // {
+  //   name: "Heroku",
+  //   src: Heroku,
+  //   value: 80,
+  // },
 
-  {
-    name: "Netlify",
-    src: Netlify,
-    value: 80,
-  },
+  // {
+  //   name: "Netlify",
+  //   src: Netlify,
+  //   value: 80,
+  // },
   {
     name: "Docker",
     src: Docker,

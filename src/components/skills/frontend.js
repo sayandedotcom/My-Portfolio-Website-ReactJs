@@ -4,6 +4,7 @@ import SASS from "../../assests/svg-sass.svg";
 import JavaScript from "../../assests/svg-javascript.svg";
 import TypeScript from "../../assests/svg-typescript.svg";
 import NPM from "../../assests/svg-npm.svg";
+import ESLint from "../../assests/svg-eslint.svg";
 import Yarn from "../../assests/svg-yarn.svg";
 import Webpack from "../../assests/svg-webpack.svg";
 import Babel from "../../assests/svg-babel.svg";
@@ -54,8 +55,8 @@ const FrontEnd1 = [
   },
 
   {
-    name: "Yarn",
-    src: Yarn,
+    name: "ESLint",
+    src: ESLint,
     value: 70,
   },
 

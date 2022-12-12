@@ -7,8 +7,10 @@
 7. Change Projects in TypeScript
 8. Signature in Logo
 9. Make Toggle Component
-10.Change CSs to SASS
+10.Change CSS to SASS
 11.Change drawer and drawer button animation
+12. ESLINT
+
 &nbsp;
 padding 4 container
 heading padding 1.5rem
