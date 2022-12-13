@@ -16,11 +16,12 @@ function DrawerC({ navLinks }) {
     <>
       <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
         <List>
-          {navLinks.map(({ name, to }, index) => (
+          {navLinks.map(({ name, to, icon }, index) => (
             <ListItemButton onClick={() => setOpen(false)} key={index}>
               <ListItemIcon>
                 <ListItemText>
                   <NavLink className="nav-link" to={to}>
+                    {icon}&nbsp;
                     {name}
                   </NavLink>
                 </ListItemText>

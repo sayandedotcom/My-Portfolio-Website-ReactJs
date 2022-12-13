@@ -30,11 +30,11 @@ const Tools = [
     src: Jira,
     value: 70,
   },
-  {
-    name: "Bootstrap",
-    src: Bootstrap,
-    value: 80,
-  },
+  // {
+  //   name: "Bootstrap",
+  //   src: Bootstrap,
+  //   value: 80,
+  // },
   {
     name: "Firebase",
     src: Firebase,

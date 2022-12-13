@@ -62,9 +62,10 @@ function Navigation() {
                 </div>
               ) : (
                 <>
-                  {navLinks.map(({ to, name }, index) => (
+                  {navLinks.map(({ to, name, icon }, index) => (
                     <Tooltip key={index} title={name} placement="bottom" arrow>
                       <NavLink className="nav-link" to={to}>
+                        {icon}&nbsp;
                         {name}
                       </NavLink>
                     </Tooltip>

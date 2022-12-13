@@ -13,7 +13,9 @@ import React from "../../assests/svg-react.svg";
 import ReactRouter from "../../assests/svg-react-router.svg";
 import Redux from "../../assests/svg-redux.svg";
 import ReduxSaga from "../../assests/svg-redux-saga.svg";
+import Tailwind from "../../assests/svg-tailwindcss.svg";
 import MaterialUI from "../../assests/svg-material-ui.svg";
+import Bootstrap from "../../assests/svg-bootstrap.svg";
 import StyledComponents from "../../assests/svg-styled-components.svg";
 import ReactQuery from "../../assests/svg-react-query.svg";
 import NextJs from "../../assests/svg-next.svg";
@@ -48,11 +50,11 @@ const FrontEnd1 = [
     src: TypeScript,
     value: 60,
   },
-  {
-    name: "NPM",
-    src: NPM,
-    value: 70,
-  },
+  // {
+  //   name: "NPM",
+  //   src: NPM,
+  //   value: 70,
+  // },
 
   {
     name: "ESLint",
@@ -99,6 +101,16 @@ const FrontEnd1 = [
     name: "Next Js",
     src: NextJs,
     value: 40,
+  },
+  {
+    name: "Bootstrap",
+    src: Bootstrap,
+    value: 80,
+  },
+  {
+    name: "Tailwind CSS",
+    src: Tailwind,
+    value: 80,
   },
   {
     name: "MaterialUI",

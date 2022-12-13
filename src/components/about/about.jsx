@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid } from "@mui/material";
 import "./about.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
@@ -6,6 +6,9 @@ import File from "../../assests/SayanDeCV.pdf";
 import PersonIcon from "@mui/icons-material/Person";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "Sayan De | About Me";
+  }, []);
   return (
     <Grid container className="about" p={4}>
       <Grid item lg={12} md={12} sm={12} xs={12}>
@@ -82,22 +85,22 @@ export default function About() {
           qualities.
           <br />
           <br />
-          <h3 style={{ textAlign: "center" }}>
-            Before working on anything on React check for its libraries.{" "}
-            <span style={{ fontSize: "1.3rem" }}> ~ Sayan De</span>
-          </h3>
-          <br />
-          <a
-            href={File}
-            target="blank"
-            style={{ textDecoration: "none", display: "inline-block" }}
-          >
-            <button className="about-button">
-              Resume
-              <NavigateNextIcon className="about-resume-icon" />
-            </button>
-          </a>
         </h3>
+        <h3 style={{ textAlign: "center" }}>
+          Before working on anything on React check for its libraries.{" "}
+          <span style={{ fontSize: "1.3rem" }}> ~ Sayan De</span>
+        </h3>
+        <br />
+        <a
+          href={File}
+          target="blank"
+          style={{ textDecoration: "none", display: "inline-block" }}
+        >
+          <button className="about-button">
+            Resume
+            <NavigateNextIcon className="about-resume-icon" />
+          </button>
+        </a>
       </Grid>
     </Grid>
   );

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./errorpage.css";
 import { useNavigate } from "react-router-dom";
 import { Button, Grid } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import HomeIcon from "@mui/icons-material/Home";
 function Errorpage() {
+  useEffect(() => {
+    document.title = "Sayan De | Error";
+  }, []);
   const navigate = useNavigate();
   const goHome = () => {
     navigate("/");

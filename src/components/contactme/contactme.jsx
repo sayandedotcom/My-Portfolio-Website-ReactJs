@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid, Tooltip } from "@mui/material";
 import "./contactme.css";
 import {
@@ -12,6 +12,9 @@ import {
 
 import links from "../home/links";
 export default function Contactme() {
+  useEffect(() => {
+    document.title = "Sayan De | Contact Me";
+  }, []);
   return (
     <Grid container className="contactme" p={4}>
       <Grid item lg={12} md={12} sm={12} xs={12}>
@@ -53,7 +56,7 @@ export default function Contactme() {
           height="400"
           allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </Grid>
 

@@ -2,9 +2,12 @@ import React from "react";
 import "./education.css";
 import EducationWeb from "./education-web";
 import EducationMobile from "./education-mobile";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import { useTheme, useMediaQuery } from "@mui/material";
 function Education() {
+  useEffect(() => {
+    document.title = "Sayan De | Educations";
+  }, []);
   // const theme = useTheme();
   // const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -19,7 +22,7 @@ function Education() {
 
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
-  console.log(width);
+  // console.log(width);
   return width < breakpoint ? <EducationMobile /> : <EducationWeb />;
 }
 

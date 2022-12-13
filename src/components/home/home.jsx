@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid, Tooltip } from "@mui/material";
 import Sayan from "../../assests/My project-removebg-preview.jpg";
 import "./home.css";
 import India from "./India";
 import links from "./links";
 export default function Home() {
+  useEffect(() => {
+    document.title = "Sayan De | Home";
+  }, []);
   return (
     <Grid container className="home">
       <Grid item lg={6} md={6} sm={12} xs={12} p={5}>
