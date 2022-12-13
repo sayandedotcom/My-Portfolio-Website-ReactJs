@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./education.css";
 import EducationWeb from "./education-web";
 import EducationMobile from "./education-mobile";
-import { useState, useEffect } from "react";
+
 // import { useTheme, useMediaQuery } from "@mui/material";
 function Education() {
   useEffect(() => {
