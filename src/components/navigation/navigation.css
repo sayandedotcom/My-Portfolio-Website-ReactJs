@@ -1,5 +1,5 @@
 /* Navigation Bar Starts*/
-.navbar {
+.navbar-light {
   --navbar-background-color: white;
   --navbar-color: black;
   --hover-color: #011aff;
@@ -7,7 +7,7 @@
   --toggle-background-color: rgb(255, 255, 255);
   --svg: #000000;
 }
-.navbar[theme="dark"] {
+.navbar-dark {
   --navbar-background-color: #0f0f0f;
   --navbar-color: white;
   --hover-color: white;
@@ -15,10 +15,19 @@
   --toggle-background-color: grey;
   --svg: white;
 }
+/* .navbar[theme="dark"] {
+  --navbar-background-color: #0f0f0f;
+  --navbar-color: white;
+  --hover-color: white;
+  --acrive-border-bottom: 0.2rem solid white;
+  --toggle-background-color: grey;
+  --svg: white;
+} */
 .navbar {
   background-color: var(--navbar-background-color);
   padding: 0.5rem;
 }
+
 /* .logo-gird {
   display: flex;
   justify-content: flex-start;

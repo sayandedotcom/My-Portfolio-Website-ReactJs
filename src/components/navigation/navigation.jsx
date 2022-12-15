@@ -19,7 +19,10 @@ function Navigation() {
     <>
       {/* Navtigation Bar Starts */}
       <>
-        <div className="navbar" theme={isDarkMode ? "dark" : ""}>
+        <nav
+          className={`navbar ${isDarkMode ? "navbar-dark" : "navbar-light"}`}
+        >
+          {/* <div className="navbar" theme={isDarkMode ? "dark" : ""}> */}
           <Grid container>
             <Grid item lg={6} md={9} sm={5} xs={8.2} className="logo-gird">
               <Tooltip title="Go Home" followCursor arrow>
@@ -90,7 +93,7 @@ function Navigation() {
               )}
             </Grid>
           </Grid>
-        </div>
+        </nav>
         <hr className="horizontal-line" />
       </>
       {/* Navtigation Bar ENds */}
