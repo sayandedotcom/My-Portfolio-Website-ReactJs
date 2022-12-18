@@ -1,14 +1,14 @@
-import GitHub from "../../assests/svg-github.svg";
-import Facebook from "../../assests/svg-facebook.svg";
-import Instagram from "../../assests/svg-instagram.svg";
-import Twitter from "../../assests/svg-twitter.svg";
-import Mail from "../../assests/svg-gmail.svg";
-import Linkedin from "../../assests/svg-linkedin.svg";
-import Resume from "../../assests/svg-resume.svg";
+import GitHub from "../../assests/social-media-svgs/svg-github.svg";
+import Facebook from "../../assests/social-media-svgs/svg-facebook.svg";
+import Instagram from "../../assests/social-media-svgs/svg-instagram.svg";
+import Twitter from "../../assests/social-media-svgs/svg-twitter.svg";
+import Mail from "../../assests/social-media-svgs/svg-gmail.svg";
+import Linkedin from "../../assests/social-media-svgs/svg-linkedin.svg";
+import Resume from "../../assests/social-media-svgs/svg-resume.svg";
 import ResumePDF from "../../assests/SayanDeCV.pdf";
-import WhatsApp from "../../assests/svg-whatsapp.svg";
+import WhatsApp from "../../assests/social-media-svgs/svg-whatsapp.svg";
 
-const links = [
+const socialLight = [
   {
     name: "My Facebook",
     link: "https://www.facebook.com/profile.php?id=100010494277272",
@@ -50,4 +50,4 @@ const links = [
     src: WhatsApp,
   },
 ];
-export default links;
+export default socialLight;

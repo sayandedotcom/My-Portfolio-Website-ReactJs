@@ -1,10 +1,10 @@
-import FreeCV from "../../assests/image-freecv.png";
-import PortfolioHTML from "../../assests/image-portfoliohtml.png";
-import Calulator from "../../assests/image-calculator.png";
-import ToDo from "../../assests/image-todolist.png";
-import Portfolio from "../../assests/image-portfolio.png";
-import Ecommerce from "../../assests/image-ecommerce.png";
-import Netflix from "../../assests/image-netflix.png";
+import FreeCV from "../../assests/projects-images/image-freecv.png";
+import PortfolioHTML from "../../assests/projects-images/image-portfoliohtml.png";
+import Calulator from "../../assests/projects-images/image-calculator.png";
+import ToDo from "../../assests/projects-images/image-todolist.png";
+import Portfolio from "../../assests/projects-images/image-portfolio.png";
+import Ecommerce from "../../assests/projects-images/image-ecommerce.png";
+import Netflix from "../../assests/projects-images/image-netflix.png";
 
 const ProjectsList = [
   {

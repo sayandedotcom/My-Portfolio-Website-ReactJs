@@ -3,12 +3,18 @@ import "./projects.css";
 import ProjectsList from "./projectsList";
 import { Grid } from "@mui/material";
 import { FaLaptopCode, FaCode, FaEye } from "react-icons/fa";
+import { useSelector } from "react-redux";
 export default function Projects() {
   useEffect(() => {
     document.title = "Sayan De | Projects";
   }, []);
+  const darkMode = useSelector((state) => state.theme.value);
   return (
-    <Grid container className="projects" p={4}>
+    <Grid
+      container
+      className={`projects ${darkMode ? "projects-dark" : "projects-light"}`}
+      p={4}
+    >
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="projects-heading">
           <FaLaptopCode className="projects-icon" />

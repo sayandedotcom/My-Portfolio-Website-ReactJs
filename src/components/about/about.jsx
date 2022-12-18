@@ -4,22 +4,27 @@ import "./about.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import File from "../../assests/SayanDeCV.pdf";
 import PersonIcon from "@mui/icons-material/Person";
-
+import { useSelector } from "react-redux";
 export default function About() {
   useEffect(() => {
     document.title = "Sayan De | About Me";
   }, []);
+  const darkMode = useSelector((state) => state.theme.value);
   return (
-    <Grid container className="about" p={4}>
+    <Grid
+      container
+      className={`about ${darkMode ? "about-dark" : "about-light"}`}
+      p={3}
+    >
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="about-heading">
-          <PersonIcon sx={{ fontSize: "2.5rem" }} className="about-icon" />
-          &nbsp;About&nbsp;<span style={{ color: "#7303a7" }}>Me</span>
+          <PersonIcon sx={{ fontSize: "2.4rem" }} className="about-icon" />
+          &nbsp;About&nbsp;<span className="about-bicolor">Me</span>
         </div>
       </Grid>
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <h3 className="about-essay">
-          <span style={{ color: "#7303a7", fontSize: "2rem" }}>
+          <span className="about-bicolor" style={{ fontSize: "2rem" }}>
             I'm Sayan De
           </span>{" "}
           <br />

@@ -15,30 +15,19 @@
   --toggle-background-color: grey;
   --svg: white;
 }
-/* .navbar[theme="dark"] {
-  --navbar-background-color: #0f0f0f;
-  --navbar-color: white;
-  --hover-color: white;
-  --acrive-border-bottom: 0.2rem solid white;
-  --toggle-background-color: grey;
-  --svg: white;
-} */
+
 .navbar {
   background-color: var(--navbar-background-color);
   padding: 0.5rem;
 }
 
-/* .logo-gird {
-  display: flex;
-  justify-content: flex-start;
-} */
 .logo {
   color: var(--navbar-color);
   /* font-size: 1.15rem; */
   /* font-family: "Itim", cursive; */
   /* text-decoration: none; */
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   /* display: inline-block; */
 }
 svg > g {
@@ -68,6 +57,7 @@ svg > g {
 }
 .toggle-drawer {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 .toggle {
@@ -77,20 +67,25 @@ svg > g {
   background-color: var(--toggle-background-color);
   margin: 10px;
   outline: 2px solid var(--hover-color);
+  cursor: pointer;
 }
-.circle {
+.circlewhite {
   height: 25px;
   width: 25px;
   border-radius: 50%;
   background-color: #ffcc4d;
-  transition: 300ms;
+  transition: 400ms;
   background-image: url("../../assests/svg-sun.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-.toggleactive {
+.circledark {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
   margin-left: 25px;
   background-color: #070707;
+  transition: 400ms;
   background-image: url("../../assests/svg-moon.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -99,13 +94,13 @@ svg > g {
 /* Navigation Bar Ends*/
 
 /* Footer Starts */
-.footer {
-  --background-color: #00012b;
+.footer-light {
+  --background-color: #070836;
   --color: white;
   --hover: #3f1be5;
 }
-.footer[theme="dark"] {
-  --background-color: #0f0f0f;
+.footer-dark {
+  --background-color: black;
   --color: white;
   --hover: grey;
 }
@@ -117,7 +112,7 @@ svg > g {
   padding-bottom: 1.5rem;
 }
 .horizontal-line {
-  border-top: 0.1px solid white;
+  border-top: 1px solid white;
 }
 .quick-links {
   color: azure;

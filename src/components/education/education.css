@@ -1,5 +1,23 @@
+.education-light {
+  --education-background-color: linear-gradient(to bottom, #83eaf1, #63a4ff);
+  /* --projects-gradient: linear-gradient(to bottom, #2121e2, #00002c); */
+  /* --navbar-color: black;
+  --hover-color: #011aff;
+  --acrive-border-bottom: 0.2rem solid #011aff;
+  --toggle-background-color: rgb(255, 255, 255);
+  --svg: #000000; */
+}
+.education-dark {
+  --education-background-color: linear-gradient(to bottom, #0f0f0f, #0f0f0f);
+  /* --projects-gradient: linear-gradient(to bottom, #0f0f0f, #0f0f0f); */
+  /* --navbar-color: white;
+  --hover-color: white;
+  --acrive-border-bottom: 0.2rem solid white;
+  --toggle-background-color: grey;
+  --svg: white; */
+}
 .education {
-  background: linear-gradient(to bottom, #83eaf1, #63a4ff);
+  background: var(--education-background-color);
   /* background-color: #e5ecfb; */
   font-family: Poppins, sans-serif;
 }

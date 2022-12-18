@@ -1,5 +1,23 @@
+.skills-light {
+  --skills-background-color: linear-gradient(to bottom, #57059e, #4a00e0);
+  /* --projects-gradient: linear-gradient(to bottom, #2121e2, #00002c); */
+  /* --navbar-color: black;
+  --hover-color: #011aff;
+  --acrive-border-bottom: 0.2rem solid #011aff;
+  --toggle-background-color: rgb(255, 255, 255);
+  --svg: #000000; */
+}
+.skills-dark {
+  --skills-background-color: linear-gradient(to bottom, #0f0f0f, #0f0f0f);
+  /* --projects-gradient: linear-gradient(to bottom, #0f0f0f, #0f0f0f); */
+  /* --navbar-color: white;
+  --hover-color: white;
+  --acrive-border-bottom: 0.2rem solid white;
+  --toggle-background-color: grey;
+  --svg: white; */
+}
 .skills {
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background: var(--skills-background-color);
   color: white;
 }
 .skill-icon {

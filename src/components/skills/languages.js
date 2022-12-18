@@ -12,7 +12,7 @@ const languages = [
     value: 80,
   },
   {
-    name: "SQL",
+    name: "SQL / PL-SQL",
     src: SQL,
     value: 80,
   },

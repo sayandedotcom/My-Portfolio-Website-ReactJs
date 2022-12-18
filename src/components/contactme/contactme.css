@@ -1,5 +1,11 @@
+.contactme-light {
+  --contactme-background-color: #e5ecfb;
+}
+.contactme-dark {
+  --contactme-background-color: #0f0f0f;
+}
 .contactme {
-  background-color: #e5ecfb;
+  background-color: var(--contactme-background-color);
   color: black;
 }
 .contactme-icon {

@@ -10,13 +10,20 @@ import {
   FaCommentDots,
 } from "react-icons/fa";
 
-import links from "../home/links";
+import socialLight from "../home/social-light-links";
+import socialDark from "../home/social-dark-links";
+import { useSelector } from "react-redux";
 export default function Contactme() {
   useEffect(() => {
     document.title = "Sayan De | Contact Me";
   }, []);
+  const darkMode = useSelector((state) => state.theme.value);
   return (
-    <Grid container className="contactme" p={4}>
+    <Grid
+      container
+      className={`contactme ${darkMode ? "contactme-dark" : "contactme-light"}`}
+      p={4}
+    >
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="contactme-heading">
           <FaPhoneAlt className="contactme-icon" />
@@ -39,13 +46,27 @@ export default function Contactme() {
         }}
       >
         <h3>My Socials</h3>
-        {links.map(({ name, link, src }, index) => (
-          <a key={index} href={link} target="blank">
-            <Tooltip title={name} placement="bottom-start" arrow>
-              <img className="icons" src={src} alt={name} />
-            </Tooltip>
-          </a>
-        ))}
+        {darkMode ? (
+          <>
+            {socialDark.map(({ name, link, fonts }, index) => (
+              <Tooltip key={index} title={name} placement="bottom" arrow>
+                <a href={link} target="blank">
+                  {fonts}
+                </a>
+              </Tooltip>
+            ))}
+          </>
+        ) : (
+          <>
+            {socialLight.map(({ name, link, src }, index) => (
+              <a key={index} href={link} target="blank">
+                <Tooltip title={name} placement="bottom" arrow>
+                  <img className="home-lignt-icons" src={src} alt={name} />
+                </Tooltip>
+              </a>
+            ))}
+          </>
+        )}
       </Grid>
 
       <Grid item lg={12} md={12} sm={12} xs={12} p={2}>

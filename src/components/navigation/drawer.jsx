@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Drawer from "@mui/material/Drawer";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import { useSelector } from "react-redux";
 import "./navigation.css";
 import {
   IconButton,
@@ -11,6 +12,7 @@ import {
 } from "@mui/material";
 import { NavLink } from "react-router-dom";
 function DrawerC({ navLinks }) {
+  const darkMode = useSelector((state) => state.theme.value);
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -31,7 +33,10 @@ function DrawerC({ navLinks }) {
         </List>
       </Drawer>
 
-      <IconButton sx={{ color: "black" }} onClick={() => setOpen(!open)}>
+      <IconButton
+        sx={{ color: `${!darkMode ? "black" : "white"}` }}
+        onClick={() => setOpen(!open)}
+      >
         <MenuRoundedIcon />
       </IconButton>
     </>

@@ -1,6 +1,16 @@
+.projects-light {
+  --projects-background-color: #131391;
+  --projects-gradient: linear-gradient(to bottom, #2121e2, #00002c);
+  --intro-title: #0f46a2;
+}
+.projects-dark {
+  --projects-background-color: #0f0f0f;
+  --projects-gradient: linear-gradient(to bottom, #0f0f0f, #0f0f0f);
+  --intro-title: black;
+}
 .projects {
-  background-color: #131391;
-  background: linear-gradient(to bottom, #2121e2, #00002c);
+  background-color: var(--projects-background-color);
+  background: var(--projects-gradient);
   color: white;
 }
 .projects-icon {
@@ -57,9 +67,8 @@
   overflow: hidden;
   transition: all 0.3s;
 }
-
 .intro-title {
-  background-color: #0f46a2;
+  background-color: var(--intro-title);
   padding: 1.2rem;
 }
 .intro-desc {

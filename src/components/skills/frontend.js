@@ -9,6 +9,7 @@ import Yarn from "../../assests/svg-yarn.svg";
 import Webpack from "../../assests/svg-webpack.svg";
 import Babel from "../../assests/svg-babel.svg";
 import Gatsby from "../../assests/svg-gatsbyjs.svg";
+import Vue from "../../assests/svg-vuejs.svg";
 import React from "../../assests/svg-react.svg";
 import ReactRouter from "../../assests/svg-react-router.svg";
 import Redux from "../../assests/svg-redux.svg";
@@ -20,9 +21,12 @@ import StyledComponents from "../../assests/svg-styled-components.svg";
 import ReactQuery from "../../assests/svg-react-query.svg";
 import NextJs from "../../assests/svg-next.svg";
 import Jest from "../../assests/svg-jest.svg";
+import RTL from "../../assests/svg-react-testing-library.svg";
+import ReactStorybook from "../../assests/svg-react-storybook.svg";
 import Flux from "../../assests/svg-flux.svg";
 import ReactNative from "../../assests/svg-react.svg";
 import PWA from "../../assests/svg-pwa.svg";
+import Figma from "../../assests/svg-figma.svg";
 
 const FrontEnd1 = [
   {
@@ -73,9 +77,9 @@ const FrontEnd1 = [
     value: 80,
   },
   {
-    name: "Gatsby Js",
-    src: Gatsby,
-    value: 80,
+    name: "Vue Js",
+    src: Vue,
+    value: 90,
   },
   {
     name: "React Js",
@@ -88,7 +92,7 @@ const FrontEnd1 = [
     value: 80,
   },
   {
-    name: " Redux",
+    name: " Redux / Redux Toolkit",
     src: Redux,
     value: 80,
   },
@@ -127,6 +131,11 @@ const FrontEnd1 = [
     src: ReactQuery,
     value: 80,
   },
+  // {
+  //   name: "React Testing Library",
+  //   src: RTL,
+  //   value: 80,
+  // },
   {
     name: "Jest",
     src: Jest,
@@ -138,6 +147,11 @@ const FrontEnd1 = [
     value: 80,
   },
   {
+    name: "Gatsby Js",
+    src: Gatsby,
+    value: 80,
+  },
+  {
     name: "React Native",
     src: ReactNative,
     value: 30,
@@ -146,6 +160,11 @@ const FrontEnd1 = [
     name: "Progressive Web Apps",
     src: PWA,
     value: 30,
+  },
+  {
+    name: "Figma",
+    src: Figma,
+    value: 80,
   },
 ];
 export default FrontEnd1;

@@ -6,13 +6,18 @@ import languages from "./languages";
 import Tools from "./tools-and-frameworks";
 import Subjects from "./subjects";
 import { FaLaptopCode } from "react-icons/fa";
-
+import { useSelector } from "react-redux";
 export default function Skills() {
   useEffect(() => {
     document.title = "Sayan De | Skills";
   }, []);
+  const darkMode = useSelector((state) => state.theme.value);
   return (
-    <Grid container className="skills" p={4}>
+    <Grid
+      container
+      className={`skills ${darkMode ? "skills-dark" : "skills-light"}`}
+      p={4}
+    >
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="skills-heading">
           <FaLaptopCode className="skill-icon" />
@@ -34,7 +39,7 @@ export default function Skills() {
       <Grid item lg={6} md={6} sm={12} xs={12} p={3} className="skills-title">
         {FrontEnd.map(
           ({ name, src, value }, index) =>
-            index <= 11 && (
+            index <= 12 && (
               <div key={index} className="skills-box">
                 <img src={src} alt={name} />
                 <Tooltip title={value + `${" %"}`} placement="bottom" arrow>
@@ -55,7 +60,7 @@ export default function Skills() {
       <Grid item lg={6} md={6} sm={12} xs={12} p={3} className="skills-title">
         {FrontEnd.map(
           ({ name, src, value }, index) =>
-            index > 11 && (
+            index > 12 && (
               <div key={index} className="skills-box">
                 <img src={src} alt={name} />
                 <Tooltip title={value + `${" %"}`} placement="bottom" arrow>

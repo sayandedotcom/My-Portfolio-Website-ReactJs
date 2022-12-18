@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./navigation.css";
 import { Grid, Tooltip, useTheme, useMediaQuery } from "@mui/material";
 import { Link, NavLink, Outlet } from "react-router-dom";
@@ -9,22 +9,19 @@ import footerLinks from "./footerLinks";
 import Drawer from "./drawer";
 import GotoButton from "../gotobutton/gotobutton";
 import Sig from "./signature2";
-// import Toggle from "./toggle";
+import { useSelector } from "react-redux";
+import Toggle from "./toggle";
 // import Sig1 from "./signature";
 function Navigation() {
+  const darkMode = useSelector((state) => state.theme.value);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
-  const [isDarkMode, setDarkMode] = useState(false);
   return (
     <>
-      {/* Navtigation Bar Starts */}
       <>
-        <nav
-          className={`navbar ${isDarkMode ? "navbar-dark" : "navbar-light"}`}
-        >
-          {/* <div className="navbar" theme={isDarkMode ? "dark" : ""}> */}
+        <nav className={`navbar ${darkMode ? "navbar-dark" : "navbar-light"}`}>
           <Grid container>
-            <Grid item lg={6} md={9} sm={5} xs={8.2} className="logo-gird">
+            <Grid item lg={5} md={9} sm={5} xs={8.2} className="logo-gird">
               <Tooltip title="Go Home" followCursor arrow>
                 <Link className="logo" to="/">
                   {/* <h1>&lt;&nbsp;</h1>
@@ -37,7 +34,7 @@ function Navigation() {
             </Grid>
             <Grid
               item
-              lg={6}
+              lg={7}
               md={3}
               sm={7}
               xs={3.8}
@@ -45,22 +42,7 @@ function Navigation() {
             >
               {isMatch ? (
                 <div className="toggle-drawer">
-                  <Tooltip
-                    title={`Switch to ${
-                      isDarkMode ? "Light Mode" : "Dark Mode"
-                    }`}
-                    placement="bottom"
-                    arrow
-                  >
-                    <div
-                      className="toggle"
-                      onClick={() => setDarkMode(!isDarkMode)}
-                    >
-                      <div
-                        className={`circle ${isDarkMode ? "toggleactive" : ""}`}
-                      ></div>
-                    </div>
-                  </Tooltip>
+                  <Toggle />
                   <Drawer navLinks={navLinks} />
                 </div>
               ) : (
@@ -73,22 +55,7 @@ function Navigation() {
                       </NavLink>
                     </Tooltip>
                   ))}
-                  <Tooltip
-                    title={`Switch to ${
-                      isDarkMode ? "Light Mode" : "Dark Mode"
-                    }`}
-                    placement="bottom-end"
-                    arrow
-                  >
-                    <div
-                      className="toggle"
-                      onClick={() => setDarkMode(!isDarkMode)}
-                    >
-                      <div
-                        className={`circle ${isDarkMode ? "toggleactive" : ""}`}
-                      ></div>
-                    </div>
-                  </Tooltip>
+                  <Toggle />
                 </>
               )}
             </Grid>
@@ -96,13 +63,10 @@ function Navigation() {
         </nav>
         <hr className="horizontal-line" />
       </>
-      {/* Navtigation Bar ENds */}
 
       <Outlet />
 
-      {/* Footer Bar Starts */}
-
-      <footer className="footer" theme={isDarkMode ? "dark" : ""}>
+      <footer className={`footer ${darkMode ? "footer-dark" : "footer-light"}`}>
         <hr className="horizontal-line" />
         <Grid container p={3}>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
@@ -180,8 +144,6 @@ function Navigation() {
           </Grid>
         </Grid>
       </footer>
-
-      {/* Footer Bar Starts */}
     </>
   );
 }
