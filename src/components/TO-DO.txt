@@ -1,16 +1,10 @@
-1. Projects Section [In Progress]
 2. Contact Me Form
-3. Dark Mode [In Progress]
 4. Mobile Potable Spacing & Alignment
-5. Change scroll bar [Done]
-6. Fixed Button to move Top [Done]
 7. Change Projects in TypeScript
-8. Signature in Logo
-9. Make Toggle Component
 10.Change CSS to SASS
 11.Change drawer and drawer button animation
-12. ESLINT
 13. Logo in NavLinks with on click(Like Youtube Drawer)
+
 &nbsp;
 padding 4 container
 heading padding 1.5rem

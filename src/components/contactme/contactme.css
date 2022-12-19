@@ -23,6 +23,12 @@
 .contactme-icon:hover {
   color: #a50eeb;
 }
+.contactme-icons {
+  color: white;
+}
+.contactme-icons:hover {
+  color: #a50eeb;
+}
 .contactme-heading {
   text-align: center;
   padding: 1.5rem;

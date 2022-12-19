@@ -94,3 +94,18 @@
 .projects-btn:hover {
   background-color: #2b3dda;
 }
+.projects-comming {
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 4%;
+  margin-left: auto;
+  padding: 1.6rem 3rem;
+  color: rgb(255, 255, 255);
+  border-radius: 0.5em;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgb(65 84 241 / 40%);
+}
+.projects-comming:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}

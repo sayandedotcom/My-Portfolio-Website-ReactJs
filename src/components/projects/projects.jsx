@@ -4,6 +4,7 @@ import ProjectsList from "./projectsList";
 import { Grid } from "@mui/material";
 import { FaLaptopCode, FaCode, FaEye } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { AiOutlineArrowRight } from "react-icons/ai";
 export default function Projects() {
   useEffect(() => {
     document.title = "Sayan De | Projects";
@@ -69,9 +70,13 @@ export default function Projects() {
           </div>
         </Grid>
       ))}
-      <h3 style={{ marginTop: "4%", marginLeft: "auto" }}>
-        More Projects Comming Soon......
-      </h3>
+      <a
+        href="https://github.com/sayande2002"
+        target="blank"
+        className="projects-comming"
+      >
+        More Projects Comming Soon <AiOutlineArrowRight />
+      </a>
     </Grid>
   );
 }

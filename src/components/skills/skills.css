@@ -1,20 +1,10 @@
 .skills-light {
   --skills-background-color: linear-gradient(to bottom, #57059e, #4a00e0);
-  /* --projects-gradient: linear-gradient(to bottom, #2121e2, #00002c); */
-  /* --navbar-color: black;
-  --hover-color: #011aff;
-  --acrive-border-bottom: 0.2rem solid #011aff;
-  --toggle-background-color: rgb(255, 255, 255);
-  --svg: #000000; */
+  --icon-hover: #ffe600;
 }
 .skills-dark {
   --skills-background-color: linear-gradient(to bottom, #0f0f0f, #0f0f0f);
-  /* --projects-gradient: linear-gradient(to bottom, #0f0f0f, #0f0f0f); */
-  /* --navbar-color: white;
-  --hover-color: white;
-  --acrive-border-bottom: 0.2rem solid white;
-  --toggle-background-color: grey;
-  --svg: white; */
+  --icon-hover: aqua;
 }
 .skills {
   background: var(--skills-background-color);
@@ -25,7 +15,7 @@
   font-size: 2.5rem;
 }
 .skill-icon:hover {
-  color: #ffe600;
+  color: var(--icon-hover);
 }
 .skills-heading {
   text-align: center;
@@ -55,6 +45,17 @@
   margin-left: 1rem;
   width: 100%;
 }
+.skills-dark-icons:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  color: aqua;
+}
+.skills-box > img:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 .skills-name {
   display: flex;
   color: white;
@@ -63,4 +64,14 @@
 .other-heading {
   font-size: 1.5rem;
   margin-bottom: 11px;
+}
+.skills-dark-icons {
+  height: 45px;
+  width: 45px;
+}
+span > span {
+  background-color: aqua !important;
+}
+.jn {
+  color: #00a6ff;
 }

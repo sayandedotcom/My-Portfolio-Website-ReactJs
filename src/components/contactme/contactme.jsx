@@ -50,7 +50,7 @@ export default function Contactme() {
           <>
             {socialDark.map(({ name, link, fonts }, index) => (
               <Tooltip key={index} title={name} placement="bottom" arrow>
-                <a href={link} target="blank" style={{ color: "white" }}>
+                <a href={link} target="blank" className="contactme-icons">
                   {fonts}
                 </a>
               </Tooltip>

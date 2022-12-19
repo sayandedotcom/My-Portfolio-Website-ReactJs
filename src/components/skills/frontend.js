@@ -139,11 +139,11 @@ const FrontEnd1 = [
     src: Jest,
     value: 80,
   },
-  {
-    name: "Flux",
-    src: Flux,
-    value: 80,
-  },
+  // {
+  //   name: "Flux",
+  //   src: Flux,
+  //   value: 80,
+  // },
   {
     name: "Gatsby Js",
     src: Gatsby,

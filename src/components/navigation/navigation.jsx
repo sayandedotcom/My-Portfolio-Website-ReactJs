@@ -76,14 +76,14 @@ function Navigation() {
             <h1 className="footer-heading">My Portfolio</h1>
             <hr className="horizontal-line" />
             <br />
-            <h4>
+            <p style={{ fontWeight: "600" }}>
               Thank you for visiting my personal portfolio website. Connect with
               me over socials.
               <br />
               <br />
               Please wait for a while all major projects will be listed soon.
               Till then keep visiting. Connect with me over chat or message me !
-            </h4>
+            </p>
           </Grid>
           <Grid item lg={4} md={4} sm={12} xs={12} p={4}>
             <h1 className="footer-heading">Quick Links</h1>
