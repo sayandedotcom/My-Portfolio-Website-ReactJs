@@ -1,9 +1,9 @@
-import Java from "../../assests/svg-java.svg";
-import Python from "../../assests/svg-python.svg";
-import SQL from "../../assests/svg-mysql.svg";
-import PHP from "../../assests/svg-php.svg";
-import GraphQL from "../../assests/svg-graphql.svg";
-import Go from "../../assests/svg-golang.svg";
+import Java from "../../assests/languages-svg/svg-java.svg";
+import Python from "../../assests/languages-svg/svg-python.svg";
+import SQL from "../../assests/languages-svg/svg-mysql.svg";
+import PHP from "../../assests/languages-svg/svg-php.svg";
+import GraphQL from "../../assests/languages-svg/svg-graphql.svg";
+import Go from "../../assests/languages-svg/svg-golang.svg";
 
 const languages = [
   {

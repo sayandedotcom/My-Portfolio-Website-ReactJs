@@ -1,18 +1,19 @@
-import Git from "../../assests/svg-git.svg";
-import GitHub from "../../assests/svg-github.svg";
-import Jira from "../../assests/svg-jira.svg";
-import Bootstrap from "../../assests/svg-bootstrap.svg";
-import Firebase from "../../assests/svg-firebase.svg";
-import ExpressJS from "../../assests/svg-express-js.svg";
-import NodeJs from "../../assests/svg-nodejs.svg";
-import MongoDB from "../../assests/svg-mongodb.svg";
-import Postman from "../../assests/svg-postman.svg";
-import Heroku from "../../assests/svg-heroku.svg";
-import Netlify from "../../assests/svg-netlify.svg";
-import Linux from "../../assests/svg-linux.svg";
-import Docker from "../../assests/svg-docker.svg";
-import UnrealEngine from "../../assests/svg-unreal-engine.svg";
-import AWS from "../../assests/svg-amazon-web-services.svg";
+import Git from "../../assests/tools-svgs/svg-git.svg";
+import GitHub from "../../assests/tools-svgs/svg-github.svg";
+import Jira from "../../assests/tools-svgs/svg-jira.svg";
+import Firebase from "../../assests/tools-svgs/svg-firebase.svg";
+import NPM from "../../assests/tools-svgs/svg-npm.svg";
+import Yarn from "../../assests/tools-svgs/svg-yarn.svg";
+import ExpressJS from "../../assests/tools-svgs/svg-express-js.svg";
+import NodeJs from "../../assests/tools-svgs/svg-nodejs.svg";
+import MongoDB from "../../assests/tools-svgs/svg-mongodb.svg";
+import Postman from "../../assests/tools-svgs/svg-postman.svg";
+import Heroku from "../../assests/tools-svgs/svg-heroku.svg";
+import Netlify from "../../assests/tools-svgs/svg-netlify.svg";
+import Linux from "../../assests/tools-svgs/svg-linux.svg";
+import Docker from "../../assests/tools-svgs/svg-docker.svg";
+import UnrealEngine from "../../assests/tools-svgs/svg-unreal-engine.svg";
+import AWS from "../../assests/tools-svgs/svg-amazon-web-services.svg";
 
 const Tools = [
   {
@@ -30,14 +31,19 @@ const Tools = [
     src: Jira,
     value: 70,
   },
-  // {
-  //   name: "Bootstrap",
-  //   src: Bootstrap,
-  //   value: 80,
-  // },
   {
     name: "Firebase",
     src: Firebase,
+    value: 80,
+  },
+  {
+    name: "NPM",
+    src: NPM,
+    value: 80,
+  },
+  {
+    name: "Yarn",
+    src: Yarn,
     value: 80,
   },
   {

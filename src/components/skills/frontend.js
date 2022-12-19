@@ -1,32 +1,31 @@
-import HTML from "../../assests/svg-html-5.svg";
-import CSS from "../../assests/svg-css-3.svg";
-import SASS from "../../assests/svg-sass.svg";
-import JavaScript from "../../assests/svg-javascript.svg";
-import TypeScript from "../../assests/svg-typescript.svg";
-import NPM from "../../assests/svg-npm.svg";
-import ESLint from "../../assests/svg-eslint.svg";
-import Yarn from "../../assests/svg-yarn.svg";
-import Webpack from "../../assests/svg-webpack.svg";
-import Babel from "../../assests/svg-babel.svg";
-import Gatsby from "../../assests/svg-gatsbyjs.svg";
-import Vue from "../../assests/svg-vuejs.svg";
-import React from "../../assests/svg-react.svg";
-import ReactRouter from "../../assests/svg-react-router.svg";
-import Redux from "../../assests/svg-redux.svg";
-import ReduxSaga from "../../assests/svg-redux-saga.svg";
-import Tailwind from "../../assests/svg-tailwindcss.svg";
-import MaterialUI from "../../assests/svg-material-ui.svg";
-import Bootstrap from "../../assests/svg-bootstrap.svg";
-import StyledComponents from "../../assests/svg-styled-components.svg";
-import ReactQuery from "../../assests/svg-react-query.svg";
-import NextJs from "../../assests/svg-next.svg";
-import Jest from "../../assests/svg-jest.svg";
-import RTL from "../../assests/svg-react-testing-library.svg";
-import ReactStorybook from "../../assests/svg-react-storybook.svg";
-import Flux from "../../assests/svg-flux.svg";
-import ReactNative from "../../assests/svg-react.svg";
-import PWA from "../../assests/svg-pwa.svg";
-import Figma from "../../assests/svg-figma.svg";
+import HTML from "../../assests/frontend-svgs/svg-html-5.svg";
+import CSS from "../../assests/frontend-svgs/svg-css-3.svg";
+import SASS from "../../assests/frontend-svgs/svg-sass.svg";
+import JavaScript from "../../assests/frontend-svgs/svg-javascript.svg";
+import TypeScript from "../../assests/frontend-svgs/svg-typescript.svg";
+import ESLint from "../../assests/frontend-svgs/svg-eslint.svg";
+import Webpack from "../../assests/frontend-svgs/svg-webpack.svg";
+import Babel from "../../assests/frontend-svgs/svg-babel.svg";
+import Gatsby from "../../assests/frontend-svgs/svg-gatsbyjs.svg";
+import Vue from "../../assests/frontend-svgs/svg-vuejs.svg";
+import React from "../../assests/frontend-svgs/svg-react.svg";
+import ReactRouter from "../../assests/frontend-svgs/svg-react-router.svg";
+import Redux from "../../assests/frontend-svgs/svg-redux.svg";
+import ReduxSaga from "../../assests/frontend-svgs/svg-redux-saga.svg";
+import Tailwind from "../../assests/frontend-svgs/svg-tailwindcss.svg";
+import MaterialUI from "../../assests/frontend-svgs/svg-material-ui.svg";
+import Chakra from "../../assests/frontend-svgs/svg-chakra-ui.svg";
+import Bootstrap from "../../assests/frontend-svgs/svg-bootstrap.svg";
+import StyledComponents from "../../assests/frontend-svgs/svg-styled-components.svg";
+import ReactQuery from "../../assests/frontend-svgs/svg-react-query.svg";
+import NextJs from "../../assests/frontend-svgs/svg-next.svg";
+import Jest from "../../assests/frontend-svgs/svg-jest.svg";
+import RTL from "../../assests/frontend-svgs/svg-react-testing-library.svg";
+import ReactStorybook from "../../assests/frontend-svgs//svg-react-storybook.svg";
+import Flux from "../../assests/frontend-svgs/svg-flux.svg";
+import ReactNative from "../../assests/frontend-svgs/svg-react.svg";
+import PWA from "../../assests/frontend-svgs/svg-pwa.svg";
+import Figma from "../../assests/frontend-svgs/svg-figma.svg";
 
 const FrontEnd1 = [
   {
@@ -54,12 +53,6 @@ const FrontEnd1 = [
     src: TypeScript,
     value: 60,
   },
-  // {
-  //   name: "NPM",
-  //   src: NPM,
-  //   value: 70,
-  // },
-
   {
     name: "ESLint",
     src: ESLint,
@@ -119,6 +112,11 @@ const FrontEnd1 = [
   {
     name: "MaterialUI",
     src: MaterialUI,
+    value: 80,
+  },
+  {
+    name: "Chakra UI",
+    src: Chakra,
     value: 80,
   },
   {

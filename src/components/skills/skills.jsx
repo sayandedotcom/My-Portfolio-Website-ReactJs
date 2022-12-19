@@ -46,6 +46,7 @@ export default function Skills() {
                   <div className="skills-bar">
                     <h2 className="skills-name">{name}</h2>
                     <LinearProgress
+                      // sx={{ backgroundColor: "black" }}
                       variant="determinate"
                       value={value}
                       color="info"

@@ -1,33 +1,25 @@
 .education-light {
   --education-background-color: linear-gradient(to bottom, #83eaf1, #63a4ff);
-  /* --projects-gradient: linear-gradient(to bottom, #2121e2, #00002c); */
-  /* --navbar-color: black;
-  --hover-color: #011aff;
-  --acrive-border-bottom: 0.2rem solid #011aff;
-  --toggle-background-color: rgb(255, 255, 255);
-  --svg: #000000; */
+  --content-color: #0f46a2;
+  --education-icon: black;
 }
 .education-dark {
   --education-background-color: linear-gradient(to bottom, #0f0f0f, #0f0f0f);
-  /* --projects-gradient: linear-gradient(to bottom, #0f0f0f, #0f0f0f); */
-  /* --navbar-color: white;
-  --hover-color: white;
-  --acrive-border-bottom: 0.2rem solid white;
-  --toggle-background-color: grey;
-  --svg: white; */
+  --content-color: rgba(0, 26, 255, 0.647);
+  --education-icon: white;
 }
 .education {
   background: var(--education-background-color);
-  /* background-color: #e5ecfb; */
   font-family: Poppins, sans-serif;
 }
 .education-icon {
   font-size: 3rem;
 }
 .education-icon:hover {
-  color: #7303a7;
+  color: rgb(0, 26, 255);
 }
 .education-heading {
+  color: var(--education-icon);
   padding: 1.5rem;
   text-align: center;
   display: flex;
@@ -38,10 +30,14 @@
 .education-quote {
   text-align: center;
   font-weight: 600;
+  color: var(--education-icon);
 }
-
+.edu-icon {
+  font-size: 25px;
+  color: var(--education-icon);
+}
 .education-content-box-right {
-  background-color: #0f46a2;
+  background-color: var(--content-color);
   color: white;
   border-radius: 6px;
   cursor: pointer;
@@ -49,8 +45,7 @@
   box-shadow: 0px 5px 10px rgb(48 68 247 / 60%);
 }
 .education-content-box-right:hover {
-  box-shadow: 0px 5px 10px rgb(48 68 247 / 60%);
-  margin-bottom: 20px;
+  box-shadow: 0px 5px 10px rgb(0, 26, 255);
 }
 .education-content-text-right {
   margin-left: 15px;
@@ -58,7 +53,7 @@
   padding-bottom: 1.2rem;
 }
 .education-content-box-left {
-  background-color: #0f46a2;
+  background-color: var(--content-color);
   color: white;
   border-radius: 6px;
   cursor: pointer;
@@ -66,7 +61,7 @@
   box-shadow: 0px 5px 10px rgb(48 68 247 / 60%);
 }
 .education-content-box-left:hover {
-  box-shadow: 0px 5px 10px rgb(48 68 247 / 60%);
+  box-shadow: 0px 5px 10px rgb(0, 26, 255);
 }
 .education-content-text-left {
   margin-left: 15px;

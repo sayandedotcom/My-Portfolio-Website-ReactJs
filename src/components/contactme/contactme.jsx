@@ -27,7 +27,7 @@ export default function Contactme() {
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="contactme-heading">
           <FaPhoneAlt className="contactme-icon" />
-          &nbsp;Contact <span style={{ color: "#7303a7" }}>&nbsp;Me</span>
+          &nbsp;Contact <span style={{ color: "#a50eeb" }}>&nbsp;Me</span>
         </div>
         <h5 className="contactme-quote">
           Every mind needs friendly contact with other minds, for food of
@@ -45,12 +45,12 @@ export default function Contactme() {
           textAlign: "center",
         }}
       >
-        <h3>My Socials</h3>
+        <h3 className="contactme-socials">My Socials</h3>
         {darkMode ? (
           <>
             {socialDark.map(({ name, link, fonts }, index) => (
               <Tooltip key={index} title={name} placement="bottom" arrow>
-                <a href={link} target="blank">
+                <a href={link} target="blank" style={{ color: "white" }}>
                   {fonts}
                 </a>
               </Tooltip>
@@ -90,16 +90,8 @@ export default function Contactme() {
         p={2}
         className="form-container"
       >
-        <h1
-          style={{
-            padding: "15px",
-            display: "flex",
-            justifyContent: "center",
-            fontWeight: "700",
-          }}
-        >
-          {" "}
-          <FaHeadset style={{ color: "7303a7" }} />
+        <h1 className="form-title">
+          <FaHeadset style={{ color: "#a50eeb" }} />
           &nbsp; Get In Touch
         </h1>
         <form className="form" action="#" method="POST">

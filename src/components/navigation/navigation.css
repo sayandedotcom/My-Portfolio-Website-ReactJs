@@ -75,7 +75,7 @@ svg > g {
   border-radius: 50%;
   background-color: #ffcc4d;
   transition: 400ms;
-  background-image: url("../../assests/svg-sun.svg");
+  background-image: url("../../assests/toggle-images/svg-sun.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -86,7 +86,7 @@ svg > g {
   margin-left: 25px;
   background-color: #070707;
   transition: 400ms;
-  background-image: url("../../assests/svg-moon.svg");
+  background-image: url("../../assests/toggle-images/svg-moon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

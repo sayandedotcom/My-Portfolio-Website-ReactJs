@@ -1,10 +1,10 @@
-import OOP from "../../assests/icons8-object-48.png";
-import DSA from "../../assests/svg-dsa.svg";
-import RDBMS from "../../assests/svg-database.svg";
-import SE from "../../assests/svg-software-engineering.svg";
-import Cloud from "../../assests/svg-cloud-computing.svg";
-import OS from "../../assests/svg-operating-system.svg";
-import CN from "../../assests/svg-computer-networks.svg";
+import OOP from "../../assests/computer-subjects-images/icons8-object-48.png";
+import DSA from "../../assests/computer-subjects-images/svg-dsa.svg";
+import RDBMS from "../../assests/computer-subjects-images/svg-database.svg";
+import SE from "../../assests/computer-subjects-images/svg-software-engineering.svg";
+import Cloud from "../../assests/computer-subjects-images/svg-cloud-computing.svg";
+import OS from "../../assests/computer-subjects-images/svg-operating-system.svg";
+import CN from "../../assests/computer-subjects-images/svg-computer-networks.svg";
 
 const Subjects = [
   {
