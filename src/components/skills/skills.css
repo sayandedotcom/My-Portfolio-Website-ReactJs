@@ -5,6 +5,8 @@
 .skills-dark {
   --skills-background-color: linear-gradient(to bottom, #0f0f0f, #0f0f0f);
   --icon-hover: aqua;
+  --dark-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua, 0 0 80px aqua,
+    0 0 120px aqua;
 }
 .skills {
   background: var(--skills-background-color);
@@ -45,6 +47,12 @@
   margin-left: 1rem;
   width: 100%;
 }
+.skills-dark-icons {
+  height: 45px;
+  width: 42px;
+  margin-left: 5px;
+  transition: all 0.2s linear;
+}
 .skills-dark-icons:hover {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -55,6 +63,7 @@
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  transition: all 0.2s linear;
 }
 .skills-name {
   display: flex;
@@ -65,13 +74,6 @@
   font-size: 1.5rem;
   margin-bottom: 11px;
 }
-.skills-dark-icons {
-  height: 45px;
-  width: 45px;
-}
 span > span {
   background-color: aqua !important;
-}
-.jn {
-  color: #00a6ff;
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./navigation.css";
 import { Grid, Tooltip, useTheme, useMediaQuery } from "@mui/material";
 import { Link, NavLink, Outlet } from "react-router-dom";
@@ -14,9 +14,19 @@ import Toggle from "./toggle";
 // import Sig1 from "./signature";
 function Navigation() {
   const darkMode = useSelector((state) => state.theme.value);
+
   useEffect(() => {
     localStorage.setItem("dark-mode", JSON.stringify(darkMode));
   }, [darkMode]);
+
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
   return (
@@ -32,6 +42,7 @@ function Navigation() {
                   <h1>&nbsp;/&gt;</h1> */}
                   <Sig />
                   {/* <Sig1 /> */}
+                  {/* <h1>{width}</h1> */}
                 </Link>
               </Tooltip>
             </Grid>

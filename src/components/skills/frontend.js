@@ -36,7 +36,7 @@ const FrontEnd1 = [
   {
     name: "CSS 3",
     src: CSS,
-    value: 70,
+    value: 80,
   },
   {
     name: "SASS",
@@ -46,7 +46,7 @@ const FrontEnd1 = [
   {
     name: "JavaScript",
     src: JavaScript,
-    value: 60,
+    value: 70,
   },
   {
     name: "TypeScript",
@@ -56,13 +56,13 @@ const FrontEnd1 = [
   {
     name: "ESLint",
     src: ESLint,
-    value: 70,
+    value: 57,
   },
 
   {
     name: "Webpack",
     src: Webpack,
-    value: 60,
+    value: 50,
   },
   {
     name: "Babel",
@@ -72,7 +72,7 @@ const FrontEnd1 = [
   {
     name: "Vue Js",
     src: Vue,
-    value: 90,
+    value: 45,
   },
   {
     name: "React Js",
@@ -82,7 +82,7 @@ const FrontEnd1 = [
   {
     name: "React Router",
     src: ReactRouter,
-    value: 80,
+    value: 90,
   },
   {
     name: " Redux / Redux Toolkit",
@@ -127,7 +127,7 @@ const FrontEnd1 = [
   {
     name: "React Query",
     src: ReactQuery,
-    value: 80,
+    value: 60,
   },
   // {
   //   name: "React Testing Library",
@@ -137,7 +137,7 @@ const FrontEnd1 = [
   {
     name: "Jest",
     src: Jest,
-    value: 80,
+    value: 50,
   },
   // {
   //   name: "Flux",

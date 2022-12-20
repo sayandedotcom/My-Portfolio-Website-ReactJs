@@ -26,10 +26,11 @@
 .home-connect {
   color: var(--home-span-color);
 }
-.home-lignt-icons {
+.home-light-icons {
   margin-top: 7px;
+  transition: all 0.2s linear;
 }
-.home-lignt-icons:hover {
+.home-light-icons:hover {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
@@ -40,6 +41,7 @@
   height: 48px;
   width: 48px;
   padding: 5px;
+  transition: all 0.2s linear;
 }
 .home-dark-icons:hover {
   -ms-transform: scale(1.2);
@@ -48,6 +50,7 @@
   color: var(--home-span-color);
 }
 .home-image {
+  height: 529px;
   display: flex;
   justify-content: space-around;
   align-items: center;

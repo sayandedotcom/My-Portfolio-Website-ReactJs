@@ -5,7 +5,7 @@ const Signature2 = () => {
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
       width="300.000000pt"
-      height="40.000000pt"
+      height="38.000000pt"
       viewBox="0 0 300.000000 57.000000"
       preserveAspectRatio="xMidYMid meet"
     >

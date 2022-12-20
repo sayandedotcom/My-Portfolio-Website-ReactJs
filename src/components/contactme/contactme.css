@@ -52,6 +52,7 @@
 }
 .form-container {
   background: var(--form-container-bgcolor);
+  backdrop-filter: blur (18px);
   border-radius: 1.5rem;
   box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
 }

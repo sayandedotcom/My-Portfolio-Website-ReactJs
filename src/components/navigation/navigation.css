@@ -4,7 +4,7 @@
   --navbar-color: black;
   --hover-color: #011aff;
   --acrive-border-bottom: 0.2rem solid #011aff;
-  --toggle-background-color: rgb(255, 255, 255);
+  --toggle-background-color: #d8f1ff;
   --svg: #000000;
 }
 .navbar-dark {
@@ -14,13 +14,20 @@
   --acrive-border-bottom: 0.2rem solid white;
   --toggle-background-color: grey;
   --svg: white;
+  --dark-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+    0 0 120px #fff;
 }
 
 .navbar {
   background-color: var(--navbar-background-color);
+  /* background-image: url("../../assests/toggle-images/9971292.jpg"); */
   padding: 0.5rem;
 }
-
+/* .logo-gird {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+} */
 .logo {
   color: var(--navbar-color);
   /* font-size: 1.15rem; */
@@ -50,6 +57,7 @@ svg > g {
 .nav-link:hover {
   color: var(--hover-color);
   border-bottom: 0.2rem solid var(--hover-color);
+  text-shadow: var(--dark-shadow);
 }
 .active {
   color: var(--hover-color);
@@ -90,7 +98,6 @@ svg > g {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 /* Navigation Bar Ends*/
 
 /* Footer Starts */
@@ -121,7 +128,9 @@ svg > g {
   display: flex;
 }
 .quick-links:hover {
-  color: var(--hover);
+  /* color: var(--hover); */
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff,
+    0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
 }
 .fonts {
   font-size: 1.5rem;

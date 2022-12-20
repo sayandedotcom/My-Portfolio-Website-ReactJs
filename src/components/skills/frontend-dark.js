@@ -1,6 +1,5 @@
 import {
   FaHtml5,
-  FaCss3Alt,
   FaSass,
   FaJs,
   FaVuejs,
@@ -38,7 +37,7 @@ const frontendDark = [
   {
     name: "CSS 3",
     src: <SiCss3 className={className} />,
-    value: 70,
+    value: 80,
   },
   {
     name: "SASS",
@@ -48,7 +47,7 @@ const frontendDark = [
   {
     name: "JavaScript",
     src: <FaJs className={className} />,
-    value: 60,
+    value: 70,
   },
   {
     name: "TypeScript",
@@ -58,12 +57,12 @@ const frontendDark = [
   {
     name: "ESLint",
     src: <SiEslint className={className} />,
-    value: 70,
+    value: 57,
   },
   {
     name: "Webpack",
     src: <SiWebpack className={className} />,
-    value: 60,
+    value: 50,
   },
   {
     name: "Babel",
@@ -73,7 +72,7 @@ const frontendDark = [
   {
     name: "Vue Js",
     src: <FaVuejs className={className} />,
-    value: 90,
+    value: 45,
   },
   {
     name: "React Js",
@@ -83,7 +82,7 @@ const frontendDark = [
   {
     name: "React Router",
     src: <SiReactrouter className={className} />,
-    value: 80,
+    value: 90,
   },
   {
     name: " Redux / Redux Toolkit",
@@ -128,7 +127,7 @@ const frontendDark = [
   {
     name: "React Query",
     src: <TbBrandReactNative className={className} />,
-    value: 80,
+    value: 60,
   },
   // {
   //   name: "React Testing Library",
@@ -138,7 +137,7 @@ const frontendDark = [
   {
     name: "Jest",
     src: <SiJest className={className} />,
-    value: 80,
+    value: 50,
   },
   //   {
   //     name: "Flux",
