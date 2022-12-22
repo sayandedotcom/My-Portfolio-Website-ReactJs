@@ -8,6 +8,7 @@ import {
   FaFigma,
 } from "react-icons/fa";
 import {
+  SiLess,
   SiRedux,
   SiReduxsaga,
   SiReactrouter,
@@ -43,6 +44,11 @@ const frontendDark = [
     name: "SASS",
     src: <FaSass className={className} />,
     value: 70,
+  },
+  {
+    name: "Less",
+    src: <SiLess className={className} />,
+    value: 50,
   },
   {
     name: "JavaScript",

@@ -61,7 +61,7 @@ export default function Contactme() {
             {socialLight.map(({ name, link, src }, index) => (
               <a key={index} href={link} target="blank">
                 <Tooltip title={name} placement="bottom" arrow>
-                  <img className="home-lignt-icons" src={src} alt={name} />
+                  <img className="home-light-icons" src={src} alt={name} />
                 </Tooltip>
               </a>
             ))}

@@ -1,6 +1,7 @@
 import HTML from "../../assests/frontend-svgs/svg-html-5.svg";
 import CSS from "../../assests/frontend-svgs/svg-css-3.svg";
 import SASS from "../../assests/frontend-svgs/svg-sass.svg";
+import Less from "../../assests/frontend-svgs/svg-less.svg";
 import JavaScript from "../../assests/frontend-svgs/svg-javascript.svg";
 import TypeScript from "../../assests/frontend-svgs/svg-typescript.svg";
 import ESLint from "../../assests/frontend-svgs/svg-eslint.svg";
@@ -42,6 +43,11 @@ const FrontEnd1 = [
     name: "SASS",
     src: SASS,
     value: 70,
+  },
+  {
+    name: "Less",
+    src: Less,
+    value: 50,
   },
   {
     name: "JavaScript",

@@ -140,3 +140,8 @@
   left: 2px;
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 480px) {
+  .contactme-icons > svg {
+    font-size: 1rem;
+  }
+}

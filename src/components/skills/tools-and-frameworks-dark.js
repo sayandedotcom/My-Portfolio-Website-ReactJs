@@ -15,6 +15,8 @@ import {
   SiLinux,
   SiMongodb,
   SiPostman,
+  SiKubernetes,
+  SiJenkins,
   SiUnrealengine,
 } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
@@ -90,6 +92,16 @@ const toolsDark = [
   {
     name: "Docker",
     src: <FaDocker className={className} />,
+    value: 60,
+  },
+  {
+    name: "Docker",
+    src: <SiKubernetes className={className} />,
+    value: 60,
+  },
+  {
+    name: "Docker",
+    src: <SiJenkins className={className} />,
     value: 60,
   },
   {

@@ -8,10 +8,12 @@ import ExpressJS from "../../assests/tools-svgs/svg-express-js.svg";
 import NodeJs from "../../assests/tools-svgs/svg-nodejs.svg";
 import MongoDB from "../../assests/tools-svgs/svg-mongodb.svg";
 import Postman from "../../assests/tools-svgs/svg-postman.svg";
-import Heroku from "../../assests/tools-svgs/svg-heroku.svg";
-import Netlify from "../../assests/tools-svgs/svg-netlify.svg";
+// import Heroku from "../../assests/tools-svgs/svg-heroku.svg";
+// import Netlify from "../../assests/tools-svgs/svg-netlify.svg";
 import Linux from "../../assests/tools-svgs/svg-linux.svg";
 import Docker from "../../assests/tools-svgs/svg-docker.svg";
+import Kubernetes from "../../assests/tools-svgs/svg-kubernetes.svg";
+import Jenkins from "../../assests/tools-svgs/svg-jenkins.svg";
 import UnrealEngine from "../../assests/tools-svgs/svg-unreal-engine.svg";
 import AWS from "../../assests/tools-svgs/svg-amazon-web-services.svg";
 
@@ -85,6 +87,16 @@ const Tools = [
   {
     name: "Docker",
     src: Docker,
+    value: 60,
+  },
+  {
+    name: "Kubernetes",
+    src: Kubernetes,
+    value: 60,
+  },
+  {
+    name: "Jenkins",
+    src: Jenkins,
     value: 60,
   },
   {

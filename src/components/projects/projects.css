@@ -12,6 +12,7 @@
   background-color: var(--projects-background-color);
   background: var(--projects-gradient);
   color: white;
+  padding: 3.6rem;
 }
 .projects-icon {
   margin-top: 2px;
@@ -31,6 +32,8 @@
 .projects-quote {
   text-align: center;
   font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 .container {
   display: flex;
@@ -97,15 +100,22 @@
 .projects-comming {
   font-weight: 700;
   text-decoration: none;
-  margin-top: 4%;
-  margin-left: auto;
+  margin: auto;
   padding: 1.6rem 3rem;
   color: rgb(255, 255, 255);
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   border: 2px solid #fff;
   box-shadow: 0px 5px 10px rgb(65 84 241 / 40%);
 }
 .projects-comming:hover {
   color: black;
   background-color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 480px) {
+  .projects {
+    padding: 1.2rem;
+  }
+  .projects-comming {
+    margin: 3rem auto;
+  }
 }

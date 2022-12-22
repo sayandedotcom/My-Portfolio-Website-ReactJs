@@ -14,7 +14,6 @@ export default function Projects() {
     <Grid
       container
       className={`projects ${darkMode ? "projects-dark" : "projects-light"}`}
-      p={4}
     >
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="projects-heading">
@@ -75,7 +74,8 @@ export default function Projects() {
         target="blank"
         className="projects-comming"
       >
-        More Projects Comming Soon <AiOutlineArrowRight />
+        More Projects Comming Soon..
+        <AiOutlineArrowRight />
       </a>
     </Grid>
   );

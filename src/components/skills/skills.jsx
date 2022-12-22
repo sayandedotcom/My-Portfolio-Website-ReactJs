@@ -20,7 +20,6 @@ export default function Skills() {
     <Grid
       container
       className={`skills ${darkMode ? "skills-dark" : "skills-light"}`}
-      p={4}
     >
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="skills-heading">
@@ -30,10 +29,10 @@ export default function Skills() {
             &nbsp;Abilities
           </span>
         </div>
-        <h5 className="skills-quote">
+        <p className="skills-quote">
           It is possible to fly without motors, but not without knowledge and
           skill
-        </h5>
+        </p>
       </Grid>
 
       <Grid item lg={12} md={12} sm={12} xs={12} p={2}>

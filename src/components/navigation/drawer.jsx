@@ -44,4 +44,3 @@ function DrawerC({ navLinks }) {
 }
 
 export default DrawerC;
-// marginLeft: "auto",

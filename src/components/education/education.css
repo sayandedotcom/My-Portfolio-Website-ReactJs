@@ -31,6 +31,7 @@
   text-align: center;
   font-weight: 600;
   color: var(--education-icon);
+  font-size: 1rem;
 }
 .edu-icon {
   font-size: 25px;
@@ -68,4 +69,6 @@
   padding-top: 10px;
   text-align: left;
   padding-bottom: 1.2rem;
+}
+@media only screen and (max-width: 480px) {
 }

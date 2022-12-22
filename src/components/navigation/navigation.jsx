@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./navigation.css";
-import { Grid, Tooltip, useTheme, useMediaQuery } from "@mui/material";
+import { Grid, Tooltip } from "@mui/material";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { FaMapMarkedAlt, FaEnvelope } from "react-icons/fa";
@@ -9,9 +9,13 @@ import footerLinks from "./footerLinks";
 import Drawer from "./drawer";
 import GotoButton from "../gotobutton/gotobutton";
 import Sig from "./signature2";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Toggle from "./toggle";
+import { resize } from "../../store/slice/windowlice";
+import Sidebar from "./sidebar";
 // import Sig1 from "./signature";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 function Navigation() {
   const darkMode = useSelector((state) => state.theme.value);
 
@@ -19,7 +23,16 @@ function Navigation() {
     localStorage.setItem("dark-mode", JSON.stringify(darkMode));
   }, [darkMode]);
 
+  const [click, setClick] = useState(true);
   const [width, setWidth] = useState(window.innerWidth);
+  const dispatch = useDispatch();
+  dispatch(resize(width));
+  const windowSize = useSelector((state) => state.window.breakpoint);
+  // useEffect(() => {
+  //   document.addEventListener("mousedown", () => {
+  //     setClick(!click);
+  //   });
+  // }, []);
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
@@ -27,8 +40,6 @@ function Navigation() {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
   return (
     <>
       <>
@@ -42,7 +53,7 @@ function Navigation() {
                   <h1>&nbsp;/&gt;</h1> */}
                   <Sig />
                   {/* <Sig1 /> */}
-                  {/* <h1>{width}</h1> */}
+                  {/* <h1>{windowSize}</h1> */}
                 </Link>
               </Tooltip>
             </Grid>
@@ -54,10 +65,14 @@ function Navigation() {
               xs={3.8}
               className="nav-links-container"
             >
-              {isMatch ? (
+              {windowSize < 1200 ? (
                 <div className="toggle-drawer">
                   <Toggle />
-                  <Drawer navLinks={navLinks} />
+                  {/* <Drawer navLinks={navLinks} /> */}
+                  <div className="menu" onClick={() => setClick(!click)}>
+                    {click ? <MenuRoundedIcon /> : <CloseRoundedIcon />}
+                  </div>
+                  <Sidebar click={click} setClick={setClick} />
                 </div>
               ) : (
                 <>

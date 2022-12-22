@@ -27,12 +27,10 @@ function EducationMobile() {
           &nbsp;My{" "}
           <span style={{ color: "rgb(0, 26, 255)" }}>&nbsp;Educations</span>
         </div>
-        <div className="education-quote">
-          <h5>
-            Education Is Not The Learning Of Facts, But The Training Of The Mind
-            To Think.
-          </h5>
-        </div>
+        <p className="education-quote">
+          Education Is Not The Learning Of Facts, But The Training Of The Mind
+          To Think.
+        </p>
       </Grid>
 
       <Grid item lg={12} md={12} sm={12} xs={12} p={4}>

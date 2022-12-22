@@ -1,0 +1,125 @@
+.home {
+  // background-color: $home-background-color;
+  .home-light {
+    $home-background-color: #f7f7f7;
+    $home-color: #002057;
+    $home-span-color: #0984ad;
+    .home-heading {
+      font-size: 3.5rem;
+      color: $home-color;
+      font-weight: 600;
+      span {
+        color: $home-span-color;
+      }
+    }
+    .home-paragraph {
+      font-size: 1.5rem;
+      color: $home-color;
+    }
+    .home-connect {
+      color: $home-span-color;
+    }
+    .home-light-icons {
+      margin-top: 7px;
+      transition: all 0.2s linear;
+      &:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+    .home-dark-icons {
+      margin-top: 7px;
+      color: var(--home-color);
+      height: 48px;
+      width: 48px;
+      padding: 5px;
+      transition: all 0.2s linear;
+      &:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color: var(--home-span-color);
+      }
+    }
+    .home-image {
+      height: 529px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        border-radius: 5%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        mix-blend-mode: luminosity;
+        transition: 0.3s;
+        cursor: pointer;
+        height: 400px;
+        width: 300px;
+        &:hover {
+          mix-blend-mode: normal;
+        }
+      }
+    }
+  }
+  .home-dark {
+    $home-background-color: #0f0f0f;
+    $home-color: white;
+    $home-span-color: #03a9f4;
+    .home-heading {
+      font-size: 3.5rem;
+      color: $home-color;
+      font-weight: 600;
+      span {
+        color: $home-span-color;
+      }
+    }
+    .home-paragraph {
+      font-size: 1.5rem;
+      color: $home-color;
+    }
+    .home-connect {
+      color: $home-span-color;
+    }
+    .home-light-icons {
+      margin-top: 7px;
+      transition: all 0.2s linear;
+      &:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+    .home-dark-icons {
+      margin-top: 7px;
+      color: var(--home-color);
+      height: 48px;
+      width: 48px;
+      padding: 5px;
+      transition: all 0.2s linear;
+      &:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color: var(--home-span-color);
+      }
+    }
+    .home-image {
+      height: 529px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        border-radius: 5%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        mix-blend-mode: luminosity;
+        transition: 0.3s;
+        cursor: pointer;
+        height: 400px;
+        width: 300px;
+        &:hover {
+          mix-blend-mode: normal;
+        }
+      }
+    }
+  }
+}

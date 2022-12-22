@@ -3,24 +3,27 @@
   --navbar-background-color: white;
   --navbar-color: black;
   --hover-color: #011aff;
-  --acrive-border-bottom: 0.2rem solid #011aff;
+  --active-border-bottom: 0.2rem solid #011aff;
   --toggle-background-color: #d8f1ff;
   --svg: #000000;
+  --menu-color: black;
+  --sidebar-hover: rgb(211, 211, 255);
 }
 .navbar-dark {
   --navbar-background-color: #0f0f0f;
   --navbar-color: white;
   --hover-color: white;
-  --acrive-border-bottom: 0.2rem solid white;
+  --active-border-bottom: 0.2rem solid white;
   --toggle-background-color: grey;
   --svg: white;
   --dark-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
     0 0 120px #fff;
+  --menu-color: white;
+  --sidebar-hover: #272727;
 }
 
 .navbar {
   background-color: var(--navbar-background-color);
-  /* background-image: url("../../assests/toggle-images/9971292.jpg"); */
   padding: 0.5rem;
 }
 /* .logo-gird {
@@ -56,12 +59,13 @@ svg > g {
 }
 .nav-link:hover {
   color: var(--hover-color);
-  border-bottom: 0.2rem solid var(--hover-color);
+  /* border-bottom: 0.2rem solid var(--hover-color); */
   text-shadow: var(--dark-shadow);
 }
 .active {
   color: var(--hover-color);
-  border-bottom: 0.2rem solid var(--hover-color);
+  text-shadow: var(--dark-shadow);
+  /* border-bottom: 0.2rem solid var(--hover-color); */
 }
 .toggle-drawer {
   display: flex;
@@ -99,6 +103,70 @@ svg > g {
   background-position: center;
 }
 /* Navigation Bar Ends*/
+
+/* Sidebar Starts */
+.menu {
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--menu-color);
+}
+.menu:hover {
+  background-color: var(--sidebar-hover);
+}
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  right: 0px;
+  top: 4.3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+  z-index: 1;
+}
+.overlay-active {
+  display: unset;
+}
+.sidebar {
+  position: fixed;
+  top: 4.3rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 16rem;
+  right: -330px;
+  background-color: var(--navbar-background-color);
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+.sidebar-active {
+  right: 0px;
+}
+.sidebar-link {
+  color: var(--navbar-color);
+  font-size: 1.2rem;
+  font-family: "Itim", cursive;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  padding: 12px 10px;
+  display: flex;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.sidebar-link:hover {
+  background-color: var(--sidebar-hover);
+  color: var(--hover-color);
+  text-shadow: var(--dark-shadow);
+}
+.sidebar-link.active {
+  color: var(--hover-color);
+  text-shadow: var(--dark-shadow);
+}
+/* Sidebar Ends */
 
 /* Footer Starts */
 .footer-light {

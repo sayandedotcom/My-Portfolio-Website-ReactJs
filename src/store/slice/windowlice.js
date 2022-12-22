@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-const initialState = { breakpoint: window.innerWidth };
+const initialState = { breakpoint: 1600 };
 export const windowSlice = createSlice({
   name: "window",
   initialState,
   reducers: {
-    resize: (state) => {
-      state.breakpoint = window.innerWidth;
+    resize: (state, actions) => {
+      state.breakpoint = actions.payload;
     },
   },
 });
