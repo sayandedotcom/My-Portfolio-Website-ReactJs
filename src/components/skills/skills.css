@@ -46,13 +46,14 @@
   display: flex;
 }
 .skills-bar {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   width: 100%;
 }
 .skills-dark-icons {
-  height: 45px;
-  width: 42px;
-  margin-left: 5px;
+  height: 48px;
+  width: 48px;
+  padding: 0rem 0.1rem;
+  /* margin-left: 5px; */
   transition: all 0.2s linear;
 }
 .skills-dark-icons:hover {
@@ -79,7 +80,7 @@
 span > span {
   background-color: aqua !important;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .skills {
     padding: 0.1rem;
   }

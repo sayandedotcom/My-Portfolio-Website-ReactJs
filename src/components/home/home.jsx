@@ -3,8 +3,7 @@ import { Grid, Tooltip } from "@mui/material";
 import { useSelector } from "react-redux";
 import Sayan from "../../assests/My project-removebg-preview.jpg";
 import India from "./India";
-import socialLight from "./social-light-links";
-import socialDark from "./social-dark-links";
+import socialicons from "./socialicons";
 import "./home.css";
 export default function Home() {
   useEffect(() => {
@@ -13,7 +12,7 @@ export default function Home() {
   const darkMode = useSelector((state) => state.theme.value);
   return (
     <Grid container className={`home ${darkMode ? "home-dark" : "home-light"}`}>
-      <Grid item lg={6} md={6} sm={12} xs={12} p={4}>
+      <Grid item lg={6} md={6} sm={12} xs={12}>
         <div className="home-heading">
           Hi, I'm{" "}
           <span>
@@ -39,27 +38,17 @@ export default function Home() {
         </h3>
         <br />
         <h2 className="home-connect">Connect with me here :)</h2>
-        {darkMode ? (
-          <>
-            {socialDark.map(({ name, link, fonts }, index) => (
-              <Tooltip key={index} title={name} placement="bottom" arrow>
-                <a href={link} target="blank">
-                  {fonts}
-                </a>
-              </Tooltip>
-            ))}
-          </>
-        ) : (
-          <>
-            {socialLight.map(({ name, link, src }, index) => (
-              <a key={index} href={link} target="blank">
-                <Tooltip title={name} placement="bottom" arrow>
-                  <img className="home-light-icons" src={src} alt={name} />
-                </Tooltip>
-              </a>
-            ))}
-          </>
-        )}
+        {socialicons.map(({ name, link, icons, src }, index) => (
+          <a key={index} href={link} target="blank">
+            <Tooltip title={name} placement="bottom" arrow>
+              {darkMode ? (
+                icons
+              ) : (
+                <img className="home-light-icons" src={src} alt={name} />
+              )}
+            </Tooltip>
+          </a>
+        ))}
       </Grid>
       <Grid item lg={6} md={6} sm={12} xs={12} className="home-image">
         <img src={Sayan} alt="SayanImage" />

@@ -16,97 +16,136 @@ import Kubernetes from "../../assests/tools-svgs/svg-kubernetes.svg";
 import Jenkins from "../../assests/tools-svgs/svg-jenkins.svg";
 import UnrealEngine from "../../assests/tools-svgs/svg-unreal-engine.svg";
 import AWS from "../../assests/tools-svgs/svg-amazon-web-services.svg";
-
+import {
+  FaGitAlt,
+  FaGithub,
+  FaJira,
+  FaNpm,
+  FaYarn,
+  FaDocker,
+  FaAws,
+} from "react-icons/fa";
+import {
+  SiFirebase,
+  SiExpress,
+  SiLinux,
+  SiMongodb,
+  SiPostman,
+  SiKubernetes,
+  SiJenkins,
+  SiUnrealengine,
+} from "react-icons/si";
+import { DiNodejs } from "react-icons/di";
+import "./skills.css";
+const className = "skills-dark-icons";
 const Tools = [
   {
     name: "Git VCS",
-    src: Git,
+    icon: <FaGitAlt className={className} />,
+    svg: Git,
     value: 80,
   },
   {
     name: "GitHub",
-    src: GitHub,
+    icon: <FaGithub className={className} />,
+    svg: GitHub,
     value: 80,
   },
   {
     name: "Jira",
-    src: Jira,
+    icon: <FaJira className={className} />,
+    svg: Jira,
     value: 70,
   },
   {
     name: "Firebase",
-    src: Firebase,
+    icon: <SiFirebase className={className} />,
+    svg: Firebase,
     value: 80,
   },
   {
     name: "NPM",
-    src: NPM,
+    icon: <FaNpm className={className} />,
+    svg: NPM,
     value: 80,
   },
   {
     name: "Yarn",
-    src: Yarn,
+    icon: <FaYarn className={className} />,
+    svg: Yarn,
     value: 80,
   },
   {
     name: "ExpressJS",
-    src: ExpressJS,
+    icon: <SiExpress className={className} />,
+    svg: ExpressJS,
     value: 50,
   },
   {
     name: "NodeJs",
-    src: NodeJs,
+    icon: <DiNodejs className={className} />,
+    svg: NodeJs,
     value: 50,
   },
   {
     name: "MongoDB",
-    src: MongoDB,
+    icon: <SiMongodb className={className} />,
+    svg: MongoDB,
     value: 60,
   },
   {
     name: "Postman",
-    src: Postman,
+    icon: <SiPostman className={className} />,
+    svg: Postman,
     value: 80,
   },
   {
     name: "Linux OS",
-    src: Linux,
+    icon: <SiLinux className={className} />,
+    svg: Linux,
     value: 80,
   },
   // {
   //   name: "Heroku",
-  //   src: Heroku,
+  //   icon: <FaGitAlt className={className} />,
+  //   svg: Heroku,
   //   value: 80,
   // },
 
-  // {
-  //   name: "Netlify",
-  //   src: Netlify,
+  //  {
+  //    name: "Netlify",
+  // icon:<FaGitAlt className={className} />,
+  // svg: Netlify,
   //   value: 80,
-  // },
+  //  },
   {
     name: "Docker",
-    src: Docker,
+    icon: <FaDocker className={className} />,
+    svg: Docker,
     value: 60,
   },
   {
     name: "Kubernetes",
-    src: Kubernetes,
+    icon: <SiKubernetes className={className} />,
+    svg: Kubernetes,
     value: 60,
   },
   {
     name: "Jenkins",
-    src: Jenkins,
+    icon: <SiJenkins className={className} />,
+    svg: Jenkins,
     value: 60,
   },
   {
     name: "AWS",
-    src: AWS,
+    icon: <FaAws className={className} />,
+    svg: AWS,
     value: 20,
   },
   {
     name: "Unreal Engine",
-    src: UnrealEngine,
+    icon: <SiUnrealengine className={className} />,
+    svg: UnrealEngine,
     value: 40,
   },
 ];

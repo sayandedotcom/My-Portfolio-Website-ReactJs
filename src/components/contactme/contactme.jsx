@@ -9,9 +9,7 @@ import {
   FaEnvelope,
   FaCommentDots,
 } from "react-icons/fa";
-
-import socialLight from "../home/social-light-links";
-import socialDark from "../home/social-dark-links";
+import socialicons from "../home/socialicons";
 import { useSelector } from "react-redux";
 export default function Contactme() {
   useEffect(() => {
@@ -46,27 +44,19 @@ export default function Contactme() {
         }}
       >
         <h3 className="contactme-socials">My Socials</h3>
-        {darkMode ? (
-          <>
-            {socialDark.map(({ name, link, fonts }, index) => (
-              <Tooltip key={index} title={name} placement="bottom" arrow>
-                <a href={link} target="blank" className="contactme-icons">
-                  {fonts}
-                </a>
-              </Tooltip>
-            ))}
-          </>
-        ) : (
-          <>
-            {socialLight.map(({ name, link, src }, index) => (
-              <a key={index} href={link} target="blank">
-                <Tooltip title={name} placement="bottom" arrow>
-                  <img className="home-light-icons" src={src} alt={name} />
-                </Tooltip>
+        {socialicons.map(({ name, link, icons, src }, index) => (
+          <Tooltip key={index} title={name} placement="bottom" arrow>
+            {darkMode ? (
+              <a href={link} target="blank" className="contactme-icons">
+                {icons}
               </a>
-            ))}
-          </>
-        )}
+            ) : (
+              <a href={link} target="blank">
+                <img className="home-light-icons" src={src} alt={name} />
+              </a>
+            )}
+          </Tooltip>
+        ))}
       </Grid>
 
       <Grid item lg={12} md={12} sm={12} xs={12} p={2}>
@@ -94,7 +84,11 @@ export default function Contactme() {
           <FaHeadset style={{ color: "#a50eeb" }} />
           &nbsp; Get In Touch
         </h1>
-        <form className="form" action="#" method="POST">
+        <form
+          className="form"
+          onSubmit={() => alert("Message sent")}
+          method="POST"
+        >
           <div className="input">
             <FaUser className="input-icon" />
             <input

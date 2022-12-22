@@ -28,147 +28,207 @@ import ReactNative from "../../assests/frontend-svgs/svg-react.svg";
 import PWA from "../../assests/frontend-svgs/svg-pwa.svg";
 import Figma from "../../assests/frontend-svgs/svg-figma.svg";
 
-const FrontEnd1 = [
+import {
+  FaHtml5,
+  FaSass,
+  FaJs,
+  FaVuejs,
+  FaReact,
+  FaBootstrap,
+  FaFigma,
+} from "react-icons/fa";
+import {
+  SiLess,
+  SiRedux,
+  SiReduxsaga,
+  SiReactrouter,
+  SiEslint,
+  SiWebpack,
+  SiBabel,
+  SiCss3,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMaterialui,
+  SiChakraui,
+  SiStyledcomponents,
+  SiJest,
+  SiGatsby,
+  SiPwa,
+  SiTypescript,
+} from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+import "./skills.css";
+const className = "skills-dark-icons";
+
+const FrontEnd = [
   {
     name: "HTML 5",
-    src: HTML,
+    icon: <FaHtml5 className={className} />,
+    svg: HTML,
     value: 80,
   },
   {
     name: "CSS 3",
-    src: CSS,
+    icon: <SiCss3 className={className} />,
+    svg: CSS,
     value: 80,
   },
   {
     name: "SASS",
-    src: SASS,
+    icon: <FaSass className={className} />,
+    svg: SASS,
     value: 70,
   },
   {
     name: "Less",
-    src: Less,
+    icon: <SiLess className={className} />,
+    svg: Less,
     value: 50,
   },
   {
     name: "JavaScript",
-    src: JavaScript,
+    icon: <FaJs className={className} />,
+    svg: JavaScript,
     value: 70,
   },
   {
     name: "TypeScript",
-    src: TypeScript,
+    icon: <SiTypescript className={className} />,
+    svg: TypeScript,
     value: 60,
   },
   {
     name: "ESLint",
-    src: ESLint,
+    icon: <SiEslint className={className} />,
+    svg: ESLint,
     value: 57,
   },
 
   {
     name: "Webpack",
-    src: Webpack,
+    icon: <SiWebpack className={className} />,
+    svg: Webpack,
     value: 50,
   },
   {
     name: "Babel",
-    src: Babel,
+    icon: <SiBabel className={className} />,
+    svg: Babel,
     value: 80,
   },
   {
     name: "Vue Js",
-    src: Vue,
+    icon: <FaVuejs className={className} />,
+    svg: Vue,
     value: 45,
   },
   {
     name: "React Js",
-    src: React,
+    icon: <FaReact className={className} />,
+    svg: React,
     value: 90,
   },
   {
     name: "React Router",
-    src: ReactRouter,
+    icon: <SiReactrouter className={className} />,
+    svg: ReactRouter,
     value: 90,
   },
   {
     name: " Redux / Redux Toolkit",
-    src: Redux,
+    icon: <SiRedux className={className} />,
+    svg: Redux,
     value: 80,
   },
   {
     name: "Redux Saga",
-    src: ReduxSaga,
+    icon: <SiReduxsaga className={className} />,
+    svg: ReduxSaga,
     value: 70,
   },
   {
     name: "Next Js",
-    src: NextJs,
+    icon: <SiNextdotjs className={className} />,
+    svg: NextJs,
     value: 40,
   },
   {
     name: "Bootstrap",
-    src: Bootstrap,
+    icon: <FaBootstrap className={className} />,
+    svg: Bootstrap,
     value: 80,
   },
   {
     name: "Tailwind CSS",
-    src: Tailwind,
+    icon: <SiTailwindcss className={className} />,
+    svg: Tailwind,
     value: 80,
   },
   {
     name: "MaterialUI",
-    src: MaterialUI,
+    icon: <SiMaterialui className={className} />,
+    svg: MaterialUI,
     value: 80,
   },
   {
     name: "Chakra UI",
-    src: Chakra,
+    icon: <SiChakraui className={className} />,
+    svg: Chakra,
     value: 80,
   },
   {
     name: "Styled Components",
-    src: StyledComponents,
+    icon: <SiStyledcomponents className={className} />,
+    svg: StyledComponents,
     value: 80,
   },
   {
     name: "React Query",
-    src: ReactQuery,
+    icon: <TbBrandReactNative className={className} />,
+    svg: ReactQuery,
     value: 60,
   },
-  // {
-  //   name: "React Testing Library",
-  //   src: RTL,
-  //   value: 80,
-  // },
+  //   {
+  //     name: "React Testing Library",
+  //   icon:<FaHtml5 className={className} />,
+  //   svg: RTL,
+  //      value: 80,
+  //   }
   {
     name: "Jest",
-    src: Jest,
+    icon: <SiJest className={className} />,
+    svg: Jest,
     value: 50,
   },
-  // {
-  //   name: "Flux",
-  //   src: Flux,
-  //   value: 80,
-  // },
+  //    {
+  //     name: "Flux",
+  //   icon:<FaHtml5 className={className} />,
+  //   svg: Flux,
+  //     value: 80,
+  //    },
   {
     name: "Gatsby Js",
-    src: Gatsby,
+    icon: <SiGatsby className={className} />,
+    svg: Gatsby,
     value: 80,
   },
   {
     name: "React Native",
-    src: ReactNative,
+    icon: <FaReact className={className} />,
+    svg: ReactNative,
     value: 30,
   },
   {
     name: "Progressive Web Apps",
-    src: PWA,
+    icon: <SiPwa className={className} />,
+    svg: PWA,
     value: 30,
   },
   {
     name: "Figma",
-    src: Figma,
+    icon: <FaFigma className={className} />,
+    svg: Figma,
     value: 80,
   },
 ];
-export default FrontEnd1;
+export default FrontEnd;

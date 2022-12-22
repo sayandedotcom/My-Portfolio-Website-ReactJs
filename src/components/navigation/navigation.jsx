@@ -6,16 +6,15 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { FaMapMarkedAlt, FaEnvelope } from "react-icons/fa";
 import navLinks from "./navLinks";
 import footerLinks from "./footerLinks";
-import Drawer from "./drawer";
 import GotoButton from "../gotobutton/gotobutton";
-import Sig from "./signature2";
+import Sig from "./signature";
 import { useDispatch, useSelector } from "react-redux";
 import Toggle from "./toggle";
 import { resize } from "../../store/slice/windowlice";
 import Sidebar from "./sidebar";
-// import Sig1 from "./signature";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+
 function Navigation() {
   const darkMode = useSelector((state) => state.theme.value);
 
@@ -28,11 +27,6 @@ function Navigation() {
   const dispatch = useDispatch();
   dispatch(resize(width));
   const windowSize = useSelector((state) => state.window.breakpoint);
-  // useEffect(() => {
-  //   document.addEventListener("mousedown", () => {
-  //     setClick(!click);
-  //   });
-  // }, []);
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
@@ -52,8 +46,6 @@ function Navigation() {
                   <h1>Sayan De</h1>
                   <h1>&nbsp;/&gt;</h1> */}
                   <Sig />
-                  {/* <Sig1 /> */}
-                  {/* <h1>{windowSize}</h1> */}
                 </Link>
               </Tooltip>
             </Grid>
@@ -68,7 +60,6 @@ function Navigation() {
               {windowSize < 1200 ? (
                 <div className="toggle-drawer">
                   <Toggle />
-                  {/* <Drawer navLinks={navLinks} /> */}
                   <div className="menu" onClick={() => setClick(!click)}>
                     {click ? <MenuRoundedIcon /> : <CloseRoundedIcon />}
                   </div>
