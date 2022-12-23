@@ -14,7 +14,6 @@ export default function About() {
     <Grid
       container
       className={`about ${darkMode ? "about-dark" : "about-light"}`}
-      p={3}
     >
       <Grid item lg={12} md={12} sm={12} xs={12}>
         <div className="about-heading">

@@ -41,7 +41,7 @@ function Navigation() {
           <Grid container>
             <Grid item lg={5} md={9} sm={5} xs={8.2} className="logo-gird">
               <Tooltip title="Go Home" followCursor arrow>
-                <Link className="logo" to="/">
+                <Link className="logo" to="/" onClick={() => setClick(!click)}>
                   {/* <h1>&lt;&nbsp;</h1>
                   <h1>Sayan De</h1>
                   <h1>&nbsp;/&gt;</h1> */}

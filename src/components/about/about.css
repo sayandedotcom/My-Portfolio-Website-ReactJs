@@ -13,6 +13,7 @@
 .about {
   background-color: var(--about-background-color);
   color: var(--about-color);
+  padding: 3.6rem;
 }
 .about-icon {
   margin-top: 2px;
@@ -58,4 +59,9 @@
 .about-button:hover .about-resume-icon {
   margin-left: 3%;
   transition: 0.3s ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+  .about {
+    padding: 1rem;
+  }
 }

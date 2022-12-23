@@ -33,7 +33,7 @@ function EducationMobile() {
         </p>
       </Grid>
 
-      <Grid item lg={12} md={12} sm={12} xs={12} p={4}>
+      <Grid item lg={12} md={12} sm={12} xs={12} py={4}>
         <Timeline
           position="right"
           sx={{
