@@ -14,7 +14,7 @@ import { resize } from "../../store/slice/windowlice";
 import Sidebar from "./sidebar";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-
+import GlobalStyles from "../../index.styles";
 function Navigation() {
   const darkMode = useSelector((state) => state.theme.value);
 
@@ -24,9 +24,12 @@ function Navigation() {
 
   const [click, setClick] = useState(true);
   const [width, setWidth] = useState(window.innerWidth);
+
   const dispatch = useDispatch();
   dispatch(resize(width));
+
   const windowSize = useSelector((state) => state.window.breakpoint);
+
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
@@ -36,6 +39,7 @@ function Navigation() {
 
   return (
     <>
+      <GlobalStyles darkMode={darkMode} />
       <>
         <nav className={`navbar ${darkMode ? "navbar-dark" : "navbar-light"}`}>
           <Grid container>
