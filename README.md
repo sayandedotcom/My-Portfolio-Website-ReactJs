@@ -95,7 +95,7 @@ Please feel free to pull requests or log issues.
 ### 📌 License
 -[MIT license](LICENSE)
 
-### 📬 Contact
+### 📌 Contact 📬
 For any query, email sayandeten@gmail.com.
 
 Thanks!
