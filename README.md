@@ -43,10 +43,11 @@ There are two methods:-
 #### 1. Using Docker (Recommended)
 #### 2. Using npm/yarn
 
-### 1. Using Docker (Recommended)
+
+### Method-1 Using Docker (Recommended)
 (Updating Soon)
 
-### 2. Using npm/yarn
+### Method-2. Using npm/yarn
 
 ## Prerequisites 📋
 
