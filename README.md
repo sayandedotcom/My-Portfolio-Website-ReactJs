@@ -2,7 +2,7 @@
 
 [Visit Website](https://sayande.tech/)
 
-My Portfolio Website made with Reactjs. 
+My Portfolio Website made with Reactjs. This is a solo Project.
 
 ## ⚪ Features 💡 
 
