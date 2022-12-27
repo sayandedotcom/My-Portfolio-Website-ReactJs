@@ -15,7 +15,7 @@ My Portfolio Website made with Reactjs.
     display: flex;
     gap: 1rem;
 ">
-  <img src="![HomePage](https://user-images.githubusercontent.com/107565578/209658089-85462f6e-7550-428d-9000-965e2c56e526.png)" alt="TicTacToe" width="100%">
+  <img src="https://user-images.githubusercontent.com/107565578/209658089-85462f6e-7550-428d-9000-965e2c56e526.png" alt="TicTacToe" width="100%">
   <img src="https://raw.githubusercontent.com/bilal-23/netflix-clone/main/examples/example3.PNG" alt="TicTacToe" width="100%">
   <img src="https://raw.githubusercontent.com/bilal-23/netflix-clone/main/examples/example5.PNG" alt="TicTacToe" width="100%">
 </div>
