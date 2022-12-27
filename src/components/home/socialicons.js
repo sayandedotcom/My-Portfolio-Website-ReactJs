@@ -34,7 +34,7 @@ const socialicons = [
   },
   {
     name: "My Twitter",
-    link: "https://twitter.com/sayande2002",
+    link: "https://twitter.com/SayanDe_10",
     icons: <FaTwitter className={className} />,
     src: Twitter,
   },

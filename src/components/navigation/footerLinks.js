@@ -62,7 +62,7 @@ const footerLinks = [
   {
     id: 9,
     name: "Twitter",
-    href: "https://twitter.com/sayande2002",
+    href: "https://twitter.com/SayanDe_10",
     fonts: <FaTwitter className={className} />,
   },
   {
