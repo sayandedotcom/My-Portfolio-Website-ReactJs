@@ -15,9 +15,8 @@ My Portfolio Website made with Reactjs.
     display: flex;
     gap: 1rem;
 ">
-  <img src="https://user-images.githubusercontent.com/107565578/209658089-85462f6e-7550-428d-9000-965e2c56e526.png" alt="TicTacToe" width="100%">
-  <img src="https://raw.githubusercontent.com/bilal-23/netflix-clone/main/examples/example3.PNG" alt="TicTacToe" width="100%">
-  <img src="https://raw.githubusercontent.com/bilal-23/netflix-clone/main/examples/example5.PNG" alt="TicTacToe" width="100%">
+  <img src="https://user-images.githubusercontent.com/107565578/209658089-85462f6e-7550-428d-9000-965e2c56e526.png" alt="Home Page" width="100%">
+  <img src="https://user-images.githubusercontent.com/107565578/209658335-d8301a73-b17b-40e4-a199-818a1e3ef4d8.png" alt="Home Page In Dark Mode" width="100%">
 </div>
 
 ## Getting Started 🚀
@@ -40,10 +39,10 @@ From your command line, first clone this repo:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/bilal-23/netflix-clone
+$ git clone https://github.com/sayande2002/My-Portfolio-Website-ReactJs.git
 
 # Go into the repository
-$ cd netflix-clone
+$ cd My-Portfolio-Website-ReactJs
 
 # Remove current origin repository
 $ git remote remove origin
@@ -61,7 +60,7 @@ $ npm install
 $ npm start
 ```
 
-Once your server has started, go to this url `http://localhost:8080/` and you will see the website running on a Development Server.
+Once your server has started, go to this url `http://localhost:3000/` and you will see the website running on a Development Server.
 
 
 ## Technologies used 🛠️
