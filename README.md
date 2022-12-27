@@ -4,13 +4,13 @@
 
 My Portfolio Website made with Reactjs. 
 
-## Features 💡 
+## ⚪ Features 💡 
 
 - Dark Mode.
 - Multiple Routes.
 - Mobile Responsiveness.
 
-## Technologies used 🛠️
+## ⚪ Technologies used 🛠️
 
 - [ReactJS](https://reactjs.org) - Javascript library
 - [React-Router](https://www.npmjs.com/package/react-router) - Used for Routing 
@@ -24,7 +24,7 @@ My Portfolio Website made with Reactjs.
 - [Vercel](https://vercel.com/) - Used for Deployment
 
 
-## Screenshots
+## ⚪ Screenshots
 
 <div align="center" style="
     flex-wrap: wrap;
@@ -36,7 +36,7 @@ My Portfolio Website made with Reactjs.
   <img src="https://user-images.githubusercontent.com/107565578/209658335-d8301a73-b17b-40e4-a199-818a1e3ef4d8.png" alt="Home Page In Dark Mode" width="70%">
 </div>
 
-## Getting Started 🚀
+## ⚪ Getting Started 🚀
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 There are two methods:-
@@ -85,7 +85,7 @@ $ npm start
 
 Once your server has started, go to this url `http://localhost:3000/` and you will see the website running on a Development Server.
 
-### Contributing
+### ⚪ Contributing
 Please feel free to pull requests or log issues.
 
 Thanks!
