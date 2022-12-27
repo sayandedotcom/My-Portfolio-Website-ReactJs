@@ -1,5 +1,7 @@
 # Portfolio Website
 
+[Visit Website](https://sayande.tech/)
+
 My Portfolio Website made with Reactjs. 
 
 ## Features 💡 
@@ -8,6 +10,20 @@ My Portfolio Website made with Reactjs.
 - Multiple Routes.
 - Mobile Responsiveness.
 
+## Technologies used 🛠️
+
+- [ReactJS](https://reactjs.org) - Javascript library
+- [React-Router](https://www.npmjs.com/package/react-router) - Used for Routing 
+- [Redux-Toolkit](https://redux-toolkit.js.org/) - Used for State Management specially for Dark Mode 
+- [Material UI](https://mui.com/) - Used for Mobile Responsiveness (Grid)
+- [Styled Components](https://styled-components.com/) - Used for writting conditions in CSS 
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - Used for Styling 
+- [SCSS](https://sass-lang.com/) - Used for Styling
+- [React-Icons](https://react-icons.github.io/react-icons/) - Used for Icons 
+- [Docker](https://www.docker.com/) - Used for Dockerization 
+- [Vercel](https://vercel.com/) - Used for Deployment
+
+
 ## Screenshots
 
 <div align="center" style="
@@ -15,13 +31,16 @@ My Portfolio Website made with Reactjs.
     display: flex;
     gap: 1rem;
 ">
-  <img src="https://user-images.githubusercontent.com/107565578/209658089-85462f6e-7550-428d-9000-965e2c56e526.png" alt="Home Page" width="100%">
-  <img src="https://user-images.githubusercontent.com/107565578/209658335-d8301a73-b17b-40e4-a199-818a1e3ef4d8.png" alt="Home Page In Dark Mode" width="100%">
+  <img src="https://user-images.githubusercontent.com/107565578/209658089-85462f6e-7550-428d-9000-965e2c56e526.png" alt="Home Page" width="70%">
+  <img src="https://user-images.githubusercontent.com/107565578/209658335-d8301a73-b17b-40e4-a199-818a1e3ef4d8.png" alt="Home Page In Dark Mode" width="70%">
 </div>
 
 ## Getting Started 🚀
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+There are two methods:-
+
+### Using docker (recommended)
 
 ### Prerequisites 📋
 
@@ -33,7 +52,7 @@ npm@6.9.0 or higher
 git@2.17.1 or higher
 ```
 
-## How To Use 🔧
+## Using npm/yarn
 
 From your command line, first clone this repo:
 
@@ -62,10 +81,7 @@ $ npm start
 
 Once your server has started, go to this url `http://localhost:3000/` and you will see the website running on a Development Server.
 
+Contributing
+Please feel free to pull requests or log issues.
 
-## Technologies used 🛠️
-
-- [Webpack](https://webpack.js.org/concepts/) - Static module bundler
-- [ReactJS](https://reactjs.org) - Javascript library
-- [React-router](https://www.npmjs.com/package/react-router) - Routing tool
-- [SCSS](https://sass-lang.com/) - CSS Preprocessor
+Thanks!
