@@ -24,7 +24,7 @@ My Portfolio Website made with Reactjs. This is a solo Project.
 - [Vercel](https://vercel.com/) - Used for Deployment
 
 
-## 📌 Screenshots
+## 📌 Sneak Peek of Main Page:
 
 <div align="center" style="
     flex-wrap: wrap;
@@ -95,5 +95,7 @@ Please feel free to pull requests or log issues.
 ### 📌 License
 -[MIT license](LICENSE)
 
+### 📬 Contact
+For any query, email sayandeten@gmail.com.
 
 Thanks!
