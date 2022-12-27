@@ -32,7 +32,7 @@ My Portfolio Website made with Reactjs.
     gap: 1rem;
 ">
   <img src="https://user-images.githubusercontent.com/107565578/209658089-85462f6e-7550-428d-9000-965e2c56e526.png" alt="Home Page" width="70%">
-    <br>
+
   <img src="https://user-images.githubusercontent.com/107565578/209658335-d8301a73-b17b-40e4-a199-818a1e3ef4d8.png" alt="Home Page In Dark Mode" width="70%">
 </div>
 
@@ -40,8 +40,8 @@ My Portfolio Website made with Reactjs.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 There are two methods:-
-# 1. Using Docker (Recommended)
-# 2. Using npm/yarn
+#### 1. Using Docker (Recommended)
+#### 2. Using npm/yarn
 
 ### 1. Using Docker (Recommended)
 (Updating Soon)
