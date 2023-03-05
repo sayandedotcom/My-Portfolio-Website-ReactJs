@@ -4,7 +4,7 @@ import Calulator from "../../assests/projects-images/image-calculator.png";
 import ToDo from "../../assests/projects-images/image-todolist.png";
 import Portfolio from "../../assests/projects-images/image-portfolio.png";
 import Ecommerce from "../../assests/projects-images/image-ecommerce.png";
-import Netflix from "../../assests/projects-images/image-netflix.png";
+import YouTube from "../../assests/projects-images/image-youtube.png";
 
 const ProjectsList = [
   {
@@ -45,16 +45,16 @@ const ProjectsList = [
   {
     img: Ecommerce,
     title: "Ecommerce Website",
-    live: "",
+    live: "https://gregarious-kringle-355af8.netlify.app/",
     code: "https://github.com/sayande2002/E-Commerce-Website",
-    bio: "[ Under Development ] Full stack ecommerce website with React, Redux, CSS, SASS, GraphQL, Firebase etc",
+    bio: " Full stack ecommerce website with React, Redux, CSS, SASS, Firebase etc",
   },
   {
-    img: Netflix,
-    title: "Netflix Clone",
-    live: "",
-    code: "",
-    bio: "[ Under Development ] Netflix Clone built with React.",
+    img: YouTube,
+    title: "YouTube Clone",
+    live: "https://youtube-clone-reactjs-woad.vercel.app",
+    code: "https://github.com/sayande2002/youtube_clone_reactjs",
+    bio: " Building a Youtube Clone with React Js and Redux Toolkit with YouTube API V3.",
   },
 ];
 
