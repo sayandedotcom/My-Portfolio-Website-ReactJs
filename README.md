@@ -4,7 +4,7 @@
 
 My Portfolio Website made with Reactjs. This is a solo Project.
 
-## 📌 Features 💡 
+## 📌 Features 💡
 
 - Dark Mode.
 - Multiple Routes.
@@ -13,16 +13,15 @@ My Portfolio Website made with Reactjs. This is a solo Project.
 ## 📌 Technologies used 🛠️
 
 - [ReactJS](https://reactjs.org) - Javascript library
-- [React-Router](https://www.npmjs.com/package/react-router) - Used for Routing 
-- [Redux-Toolkit](https://redux-toolkit.js.org/) - Used for State Management specially for Dark Mode 
+- [React-Router](https://www.npmjs.com/package/react-router) - Used for Routing
+- [Redux-Toolkit](https://redux-toolkit.js.org/) - Used for State Management specially for Dark Mode
 - [Material UI](https://mui.com/) - Used for Mobile Responsiveness (Grid)
-- [Styled Components](https://styled-components.com/) - Used for writting conditions in CSS 
-- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - Used for Styling 
+- [Styled Components](https://styled-components.com/) - Used for writting conditions in CSS
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - Used for Styling
 - [SCSS](https://sass-lang.com/) - Used for Styling
-- [React-Icons](https://react-icons.github.io/react-icons/) - Used for Icons 
-- [Docker](https://www.docker.com/) - Used for Dockerization 
+- [React-Icons](https://react-icons.github.io/react-icons/) - Used for Icons
+- [Docker](https://www.docker.com/) - Used for Containerization
 - [Vercel](https://vercel.com/) - Used for Deployment
-
 
 ## 📌 Sneak Peek of Main Page:
 
@@ -41,11 +40,13 @@ My Portfolio Website made with Reactjs. This is a solo Project.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 There are two methods:-
+
 #### 1. Using Docker (Recommended)
+
 #### 2. Using npm/yarn
 
-
 ### Method-1 Using Docker (Recommended)
+
 (Updating Soon)
 
 ### Method-2. Using npm/yarn
@@ -88,15 +89,19 @@ $ npm start
 Once your server has started, go to this url `http://localhost:3000/` and you will see the website running on a Development Server.
 
 ### 📌 Authors
+
 -[Sayan De](https://github.com/sayande2002)
 
 ### 📌 Contributing
+
 Please feel free to pull requests or log issues.
 
 ### 📌 License
+
 -[MIT license](LICENSE)
 
 ### 📌 Contact 📬
+
 For any query, email sayandeten@gmail.com.
 
 Thanks!
